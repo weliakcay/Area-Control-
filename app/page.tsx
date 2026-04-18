@@ -1,7 +1,10 @@
-export default function HomePage() {
+import Hero from '@/components/sections/Hero';
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-24">
-      <p className="text-cream/60 text-sm font-mono">Area Control — yapım aşamasında</p>
-    </div>
+    <>
+      <Hero />
+      <div className="min-h-[50vh]" />
+    </>
   );
 }
