@@ -1,0 +1,105 @@
+import type { Metadata } from 'next';
+import KickerLabel from '@/components/ui/KickerLabel';
+import Reveal from '@/components/ui/Reveal';
+import Counter from '@/components/ui/Counter';
+import { site } from '@/content/site';
+
+export const metadata: Metadata = {
+  title: 'Hakkımızda',
+  description: `${site.name}, Antalya merkezli bağımsız bir belgelendirme ve denetim şirketidir.`,
+};
+
+const TIMELINE = [
+  { year: '2009', text: 'SigmaCert belgelendirme altyapısı kurulur; kurucu ekip uluslararası denetim deneyimiyle yola çıkar.' },
+  { year: '2018', text: 'Area Control Anonim Şirketi olarak Antalya\'da faaliyete başlar; otel ve restoran sektörüne özel odaklanma.' },
+  { year: '2021', text: 'Hijyen ve laboratuvar analiz hizmetleri entegre edilir; saha ve laboratuvar tek ekipten.' },
+  { year: '2024', text: 'TÜRKAK akreditasyon kapsamı 16 standarda genişler; tedarikçi denetim programı ayrı bir disiplin olarak yapılandırılır.' },
+];
+
+const VALUES = [
+  { title: 'Bağımsızlık', text: 'Denetçinin tek taahhüdü standarda ve gerçeğe. Ticari baskıyı denetim masasına sokmayız.' },
+  { title: 'Şeffaflık', text: 'Kapsam, süreç ve bulgular dokümante, dosyalanmış ve izlenebilir. Sürpriz fatura veya karar yok.' },
+  { title: 'Süreklilik', text: 'Belge bir an değil, yürüyen bir disiplindir. Yıllık gözetim yapılandırılmış bir ortaklık olarak tasarlandı.' },
+];
+
+export default function Hakkimizda() {
+  return (
+    <>
+      <section className="pt-36 pb-16 px-6 lg:px-10 bg-ink grain isolate">
+        <div className="mx-auto max-w-7xl">
+          <KickerLabel>— Hakkımızda</KickerLabel>
+          <h1 className="mt-6 display-xl text-cream max-w-4xl">
+            Güven, <span className="italic text-crimson font-normal">editoryel</span> titizliktir.
+          </h1>
+          <p className="mt-8 max-w-2xl text-cream/65 leading-relaxed">
+            Area Control, Antalya merkezli bağımsız bir belgelendirme, gözetim ve teknik kontrol şirketidir. SigmaCert ortaklığı üzerinden TÜRKAK akreditasyonuyla çalışır; otel ve restoran operasyonlarının kalitesini uluslararası bir disipline bağlar.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 border-t border-white/5">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-3 gap-6 md:gap-4">
+          {site.metrics.map((m, i) => (
+            <Reveal key={m.label} delay={i * 0.08}>
+              <div className="p-8 border border-white/5 bg-white/[0.02]">
+                <div className="font-display text-5xl md:text-6xl text-crimson leading-none">
+                  <Counter to={m.value} />
+                </div>
+                <div className="mt-4 kicker">{m.label}</div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="py-28 border-t border-white/5">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
+          <div className="md:col-span-4"><Reveal><KickerLabel>Değerlerimiz</KickerLabel></Reveal></div>
+          <div className="md:col-span-8 grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            {VALUES.map((v, i) => (
+              <Reveal key={v.title} delay={i * 0.08}>
+                <div className="bg-ink p-8 h-full">
+                  <div className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-crimson/80">
+                    0{i + 1}
+                  </div>
+                  <h3 className="mt-4 font-display text-2xl text-cream">{v.title}</h3>
+                  <p className="mt-3 text-cream/60 text-[0.9rem] leading-relaxed">{v.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 border-t border-white/5">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
+          <div className="md:col-span-4"><Reveal><KickerLabel>Kronoloji</KickerLabel></Reveal></div>
+          <div className="md:col-span-8 space-y-px bg-white/5 border border-white/5">
+            {TIMELINE.map((t, i) => (
+              <Reveal key={t.year} delay={i * 0.08}>
+                <div className="bg-ink p-8 grid md:grid-cols-12 gap-6 items-start">
+                  <div className="md:col-span-3 font-display text-3xl md:text-4xl text-crimson leading-none">
+                    {t.year}
+                  </div>
+                  <p className="md:col-span-9 text-cream/65 leading-relaxed">{t.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 border-t border-white/5">
+        <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
+          <KickerLabel>Ortaklık</KickerLabel>
+          <h2 className="mt-5 display-lg text-cream max-w-3xl mx-auto">
+            SigmaCert akreditasyonu, Area Control saha deneyimi.
+          </h2>
+          <p className="mt-8 text-cream/65 max-w-2xl mx-auto leading-relaxed">
+            Sistem belgelendirme hizmetlerini, 2009&rsquo;dan bu yana alanında çalışan SigmaCert&rsquo;in TÜRKAK akreditasyonu altında sunuyoruz. Helal belgelendirmede HAK kapsamı geçerlidir. Bu yapı, hem uluslararası tanınırlık hem de yerel saha hızını aynı anda sağlar.
+          </p>
+        </div>
+      </section>
+    </>
+  );
+}
