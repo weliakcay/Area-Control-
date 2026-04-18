@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="0.5" stop-color="#440709"/>
+      <stop offset="1" stop-color="#A0141A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="80" y="200" font-family="Playfair Display, serif" font-size="80" fill="#EBE2D3" font-weight="500">AREA CONTROL</text>
+  <text x="80" y="270" font-family="Playfair Display, serif" font-size="48" fill="#EBE2D3" font-style="italic" font-weight="400">Güvenin kapsamı,</text>
+  <text x="80" y="325" font-family="Playfair Display, serif" font-size="48" fill="#EBE2D3" font-style="italic" font-weight="400">denetimle başlar.</text>
+  <text x="80" y="550" font-family="monospace" font-size="22" fill="#EBE2D3" opacity="0.7">BELGELENDİRME &middot; GÖZETİM &middot; KONTROL &middot; ANTALYA</text>
+</svg>
