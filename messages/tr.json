@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "cta": "Teklif Al"
+  },
+  "hero": {
+    "kicker": "Certified Trust · Belgelendirme · Denetim · Kontrol",
+    "titleBefore": "Güvenin",
+    "titleItalic": "kapsamı",
+    "titleAfter": ", denetimle başlar.",
+    "intro": "Antalya merkezli, TÜRKAK akreditasyonu ile otel ve restoran işletmelerinizi uluslararası standartlara taşıyoruz.",
+    "ctaPrimary": "Teklif Alın",
+    "ctaSecondary": "Hizmetlerimiz"
+  },
+  "about": {
+    "kicker": "01 · Biz Kimiz",
+    "title": "Belgelendirme yüzeysel değil, sistemsel bir disiplindir.",
+    "p1": "Area Control, Antalya merkezli; otel ve restoran operasyonlarının kalitesini uluslararası standartlara bağlayan bağımsız bir belgelendirme ve denetim şirketidir.",
+    "p2": "SigmaCert ortaklığı üzerinden TÜRKAK akreditasyonuyla çalışırız. Amacımız sertifika toplamak değil, misafirinize sunduğunuz güvenin görünür kanıtını oluşturmaktır."
+  },
+  "services": {
+    "kicker": "02 · Hizmetler",
+    "title": "Üç başlık. Tek bir ortak.",
+    "intro": "Sistem belgelendirmeden saha denetimine, operasyonunuzun tüm temas noktalarında yanındayız."
+  },
+  "process": {
+    "kicker": "03 · Süreç",
+    "title": "Şeffaf dört adımda belgelendirme.",
+    "intro": "Her adım, eksikleri net görmeniz için tasarlandı. Sürpriz fatura, sürpriz kapsam yok."
+  },
+  "standards": {
+    "kicker": "04 · Standart Kütüphanesi",
+    "title": "16 yönetim sistemi standardı.",
+    "intro": "Kalite, çevre, gıda, bilgi güvenliği, enerji ve iş güvenliği alanlarında akrediteli belgelendirme."
+  },
+  "clients": {
+    "kicker": "05 · Kimlerle Çalışıyoruz",
+    "title": "Antalya'nın en iyi işletmeleri ile ortaklık.",
+    "intro": "5 yıldızlı oteller, butik konseptler, zincir restoranlar — hepsi farklı ama aynı standarda bağlı."
+  },
+  "video": {
+    "kicker": "06 · Saha",
+    "quote": "Denetim, iyi bir otelin misafire söylemediği ama her gün tekrarladığı sözdür."
+  },
+  "faq": {
+    "kicker": "07 · Sıkça Sorulanlar",
+    "title": "Akıldaki ilk sorular."
+  },
+  "cta": {
+    "kicker": "08 · İletişim",
+    "title": "Teklif alalım.",
+    "intro": "Hangi hizmet için geldiğinizi seçin, 24 saat içinde kapsamlı bir teklifle dönüyoruz.",
+    "form": {
+      "name": "Ad Soyad",
+      "company": "Kurum",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "service": "Hizmet",
+      "message": "Mesaj",
+      "submit": "Gönder",
+      "servicePlaceholder": "Hizmet seçin",
+      "serviceOther": "Diğer / Genel Bilgi",
+      "success": "Mesajınız iletildi. En kısa sürede dönüş yapacağız."
+    }
+  },
+  "footer": {
+    "tagline": "Belgelendirme, gözetim ve teknik kontrol.",
+    "servicesHeading": "Hizmetler",
+    "companyHeading": "Kurumsal",
+    "contactHeading": "İletişim",
+    "copyright": "Tüm hakları saklıdır."
+  }
+}
