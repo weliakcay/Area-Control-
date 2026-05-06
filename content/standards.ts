@@ -1,12 +1,13 @@
 export type StandardCategory =
   | 'quality' | 'environment' | 'food' | 'safety'
-  | 'info' | 'energy' | 'supply' | 'medical' | 'other';
+  | 'info' | 'energy' | 'supply' | 'medical' | 'social' | 'other';
 
 export type Standard = {
   code: string;
   shortCode: string;
   name: string;
   description: string;
+  pitch?: string;
   category: StandardCategory;
 };
 
@@ -16,6 +17,7 @@ export const standards: Standard[] = [
     shortCode: '9001',
     name: 'Kalite Yönetim Sistemi',
     description: 'Ürün ve hizmet kalitesinin sistematik yönetimi; süreçlerin iyileştirilmesi ve müşteri memnuniyetinin artırılması.',
+    pitch: 'Verimliliği odağa alan temel yönetim disiplini.',
     category: 'quality',
   },
   {
@@ -23,6 +25,7 @@ export const standards: Standard[] = [
     shortCode: '14001',
     name: 'Çevre Yönetim Sistemi',
     description: 'Çevresel etkilerin sistemli kontrolü ve sürdürülebilirlik yükümlülüklerinin yerine getirilmesi.',
+    pitch: 'Çevresel etkileri minimize eden doğaya duyarlı yapı.',
     category: 'environment',
   },
   {
@@ -30,6 +33,7 @@ export const standards: Standard[] = [
     shortCode: '22000',
     name: 'Gıda Güvenliği Yönetim Sistemi',
     description: 'Gıda zincirinin her aşamasında güvenliğin sistematik denetimi; otel ve restoran operasyonlarının merkezinde.',
+    pitch: 'Tarladan sofraya tüm süreçlerde tam güvenilirlik.',
     category: 'food',
   },
   {
@@ -37,6 +41,7 @@ export const standards: Standard[] = [
     shortCode: '45001',
     name: 'İş Sağlığı ve Güvenliği',
     description: 'Çalışma ortamında risklerin belirlenmesi, önleyici kontrollerin kurulması ve sürdürülmesi.',
+    pitch: 'Çalışanlar için güvenli ortam ve risk yönetimi.',
     category: 'safety',
   },
   {
@@ -44,7 +49,24 @@ export const standards: Standard[] = [
     shortCode: '50001',
     name: 'Enerji Yönetim Sistemi',
     description: 'Enerji performansının izlenmesi, verimliliğin artırılması ve maliyet kontrolü.',
+    pitch: 'Enerji performansını artırarak maliyetleri düşüren sistemler.',
     category: 'energy',
+  },
+  {
+    code: 'ISO 46001:2019',
+    shortCode: '46001',
+    name: 'Su Verimliliği Yönetim Sistemi',
+    description: 'Su kaynaklarının akıllı ve tasarruflu yönetimi; kullanım verimliliğinin sistematik artırılması.',
+    pitch: 'Su kaynaklarının akıllı ve tasarruflu yönetimi.',
+    category: 'environment',
+  },
+  {
+    code: 'ISO 26000:2010',
+    shortCode: '26000',
+    name: 'Sosyal Sorumluluk Rehberi',
+    description: 'İşletmenin etik, çevresel ve toplumsal değerlere uyumunun sistematik yönetimi.',
+    pitch: 'İşletmenizin etik ve toplumsal değerlere uyumu.',
+    category: 'social',
   },
   {
     code: 'ISO/IEC 27001:2022',
@@ -58,6 +80,7 @@ export const standards: Standard[] = [
     shortCode: '10002',
     name: 'Müşteri Memnuniyeti Yönetim Sistemi',
     description: 'Şikayet yönetimi, geri bildirim süreçleri ve müşteri deneyiminin sistemli iyileştirilmesi.',
+    pitch: 'Şikayetleri gelişime dönüştüren hizmet kalitesi.',
     category: 'quality',
   },
   {

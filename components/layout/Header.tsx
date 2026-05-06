@@ -52,8 +52,8 @@ export default function Header() {
               <Link href="/hizmetler/tedarikci-denetimi" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
                 <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">02</span>Tedarikçi Denetimi
               </Link>
-              <Link href="/hizmetler/hijyen-gida-su" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
-                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">03</span>Hijyen, Gıda &amp; Su
+              <Link href="/hizmetler/hijyen-denetimi" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
+                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">03</span>Hijyen ve Saha Denetimi
               </Link>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Header() {
         <div className="md:hidden bg-ink/95 backdrop-blur-md border-t border-white/5 px-6 py-6 flex flex-col gap-4">
           <Link href="/hizmetler/sistem-belgelendirme" onClick={() => setMenuOpen(false)} className="text-cream/80">Sistem Belgelendirme</Link>
           <Link href="/hizmetler/tedarikci-denetimi" onClick={() => setMenuOpen(false)} className="text-cream/80">Tedarikçi Denetimi</Link>
-          <Link href="/hizmetler/hijyen-gida-su" onClick={() => setMenuOpen(false)} className="text-cream/80">Hijyen, Gıda &amp; Su</Link>
+          <Link href="/hizmetler/hijyen-denetimi" onClick={() => setMenuOpen(false)} className="text-cream/80">Hijyen ve Saha Denetimi</Link>
           <Link href="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-cream/80">{tr.nav.about}</Link>
           <Link href="/iletisim" onClick={() => setMenuOpen(false)} className="text-cream/80">{tr.nav.contact}</Link>
           <Link href="/iletisim" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex justify-center items-center px-4 py-3 bg-crimson text-cream uppercase tracking-[0.2em] text-[0.75rem]">

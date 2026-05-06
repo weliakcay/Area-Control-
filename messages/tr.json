@@ -7,9 +7,9 @@
   },
   "hero": {
     "kicker": "Certified Trust · Belgelendirme · Denetim · Kontrol",
-    "titleBefore": "Güvenin",
-    "titleItalic": "kapsamı",
-    "titleAfter": ", denetimle başlar.",
+    "titleBefore": "Güven,",
+    "titleItalic": "sahada",
+    "titleAfter": " kanıtlanır.",
     "intro": "Antalya merkezli, TÜRKAK akreditasyonu ile otel ve restoran işletmelerinizi uluslararası standartlara taşıyoruz.",
     "ctaPrimary": "Teklif Alın",
     "ctaSecondary": "Hizmetlerimiz"
@@ -32,8 +32,8 @@
   },
   "standards": {
     "kicker": "04 · Standart Kütüphanesi",
-    "title": "16 yönetim sistemi standardı.",
-    "intro": "Kalite, çevre, gıda, bilgi güvenliği, enerji ve iş güvenliği alanlarında akrediteli belgelendirme."
+    "title": "18 yönetim sistemi standardı.",
+    "intro": "Kalite, çevre, gıda, bilgi güvenliği, enerji, su verimliliği, iş güvenliği ve sosyal sorumluluk alanlarında akrediteli belgelendirme."
   },
   "clients": {
     "kicker": "05 · Kimlerle Çalışıyoruz",

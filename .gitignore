@@ -5,3 +5,9 @@ out/
 .DS_Store
 *.log
 logo-source.svg
+
+# Claude Code session artefacts
+.claude/
+
+# Internal team prep documents
+ekip-hazırlığı/

@@ -1,9 +1,9 @@
 export const site = {
   name: 'Area Control',
   legalName: 'Area Control Belgelendirme Gözetim ve Teknik Kontrol Hizmetleri A.Ş.',
-  tagline: 'Güvenin kapsamı, denetimle başlar.',
+  tagline: 'Sahada kanıtlanan güven.',
   description:
-    'Antalya merkezli, TÜRKAK akreditasyonu ile otel ve restoran işletmeleri için sistem belgelendirme, tedarikçi denetimi ve hijyen-gıda-su denetimi hizmetleri.',
+    'Antalya merkezli, TÜRKAK akreditasyonu ile otel ve restoran işletmeleri için sistem belgelendirme, tedarikçi denetimi ve hijyen denetimi hizmetleri.',
   address: {
     line1: 'Zerdalilik Mah. 1380 Sok.',
     line2: 'Gülgün Apt. Sitesi No:8/6',
@@ -22,7 +22,7 @@ export const site = {
   ],
   metrics: [
     { value: '150+', label: 'Tamamlanan Denetim' },
-    { value: '18', label: 'ISO Standardı' },
+    { value: '18', label: 'Yönetim Sistemi Standardı' },
     { value: 'TÜRKAK', label: 'Akreditasyon' },
   ],
   url: 'https://areacontrol.com.tr',

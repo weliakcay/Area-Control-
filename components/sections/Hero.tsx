@@ -26,8 +26,12 @@ export default function Hero() {
         aria-hidden
         className="absolute inset-0 -z-10"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_18%_22%,rgba(160,20,26,0.35),transparent_55%),radial-gradient(ellipse_at_78%_78%,rgba(68,7,9,0.6),transparent_55%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink/10 to-ink" />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-70"
+          style={{ backgroundImage: "url('/media/hero-poster.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_22%_28%,rgba(184,149,106,0.28),transparent_60%),radial-gradient(ellipse_at_78%_82%,rgba(160,20,26,0.32),transparent_55%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/15 via-ink/30 to-ink/85" />
       </motion.div>
 
       <motion.div style={reduce ? undefined : { opacity }} className="relative mx-auto max-w-7xl px-6 lg:px-10 w-full">
@@ -88,38 +92,7 @@ export default function Hero() {
           </Button>
         </motion.div>
 
-        {!reduce && (
-          <div
-            aria-hidden
-            className="hidden lg:flex absolute right-10 top-1/2 -translate-y-1/2 w-40 h-40 rounded-full border border-dashed border-crimson/40 items-center justify-center"
-            style={{ animation: 'ac-spin 30s linear infinite' }}
-          >
-            <svg viewBox="0 0 160 160" className="absolute inset-0 w-full h-full">
-              <defs>
-                <path id="hero-circ" d="M80,80 m-64,0 a64,64 0 1,1 128,0 a64,64 0 1,1 -128,0" />
-              </defs>
-              <text fill="rgba(235,226,211,0.55)" fontFamily="var(--font-mono)" fontSize="9" letterSpacing="4">
-                <textPath href="#hero-circ">
-                  TÜRKAK · HAK · ISO 9001 · ISO 22000 · BELGELENDİRME ·
-                </textPath>
-              </text>
-            </svg>
-            <span className="font-display italic text-crimson text-sm">since 2009</span>
-          </div>
-        )}
-
-        <div className="absolute left-6 lg:left-10 bottom-8 flex items-center gap-3 text-cream/40 text-[0.7rem] font-mono tracking-[0.3em] uppercase">
-          <span className="w-8 h-px bg-cream/40" aria-hidden />
-          Scroll
-        </div>
       </motion.div>
-
-      <style>{`
-        @keyframes ac-spin {
-          from { transform: translateY(-50%) rotate(0deg); }
-          to   { transform: translateY(-50%) rotate(360deg); }
-        }
-      `}</style>
     </section>
   );
 }

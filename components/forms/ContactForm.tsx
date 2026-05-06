@@ -56,7 +56,7 @@ export default function ContactForm() {
           <option value="" disabled>{tr.cta.form.servicePlaceholder}</option>
           <option value="sistem-belgelendirme">Sistem Belgelendirme</option>
           <option value="tedarikci-denetimi">Tedarikçi Denetimi</option>
-          <option value="hijyen-gida-su">Hijyen, Gıda &amp; Su Denetimi</option>
+          <option value="hijyen-denetimi">Hijyen ve Saha Denetimi</option>
           <option value="diger">{tr.cta.form.serviceOther}</option>
         </select>
       </label>

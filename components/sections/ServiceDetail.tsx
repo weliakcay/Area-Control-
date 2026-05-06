@@ -37,26 +37,65 @@ export default function ServiceDetail({ service }: { service: Service }) {
         </div>
       </section>
 
-      <section className="py-28 border-t border-white/5">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-4"><Reveal><KickerLabel>Kapsam</KickerLabel></Reveal></div>
-          <div className="md:col-span-8">
-            <Reveal as="h2" className="display-lg text-cream mb-10">Hizmet içinde neler var?</Reveal>
-            <ul className="space-y-6">
-              {service.scope.map((item, i) => (
-                <Reveal as="li" key={i} delay={i * 0.05}>
-                  <div className="flex items-start gap-5 border-b border-white/5 pb-5">
-                    <span className="font-mono text-[0.75rem] text-crimson mt-1 shrink-0">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <span className="text-cream/80 text-lg leading-relaxed">{item}</span>
-                  </div>
+      {service.scopeBlocks && service.scopeBlocks.length > 0 ? (
+        service.scopeBlocks.map((block, blockIndex) => (
+          <section
+            key={block.title}
+            className={`py-28 border-t border-white/5 ${blockIndex % 2 === 1 ? 'bg-gradient-to-b from-ink to-black' : ''}`}
+          >
+            <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
+              <div className="md:col-span-4">
+                <Reveal>
+                  <KickerLabel>{`Kapsam · 0${blockIndex + 1}`}</KickerLabel>
                 </Reveal>
-              ))}
-            </ul>
+              </div>
+              <div className="md:col-span-8">
+                <Reveal as="h2" className="display-lg text-cream mb-6">
+                  {block.title}
+                </Reveal>
+                {block.intro && (
+                  <Reveal as="p" delay={0.05} className="text-cream/65 leading-relaxed mb-10 max-w-2xl">
+                    {block.intro}
+                  </Reveal>
+                )}
+                <ul className="space-y-6">
+                  {block.items.map((item, i) => (
+                    <Reveal as="li" key={i} delay={i * 0.05}>
+                      <div className="flex items-start gap-5 border-b border-white/5 pb-5">
+                        <span className="font-mono text-[0.75rem] text-crimson mt-1 shrink-0">
+                          {String(i + 1).padStart(2, '0')}
+                        </span>
+                        <span className="text-cream/80 text-lg leading-relaxed">{item}</span>
+                      </div>
+                    </Reveal>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        ))
+      ) : (
+        <section className="py-28 border-t border-white/5">
+          <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
+            <div className="md:col-span-4"><Reveal><KickerLabel>Kapsam</KickerLabel></Reveal></div>
+            <div className="md:col-span-8">
+              <Reveal as="h2" className="display-lg text-cream mb-10">Hizmet içinde neler var?</Reveal>
+              <ul className="space-y-6">
+                {service.scope.map((item, i) => (
+                  <Reveal as="li" key={i} delay={i * 0.05}>
+                    <div className="flex items-start gap-5 border-b border-white/5 pb-5">
+                      <span className="font-mono text-[0.75rem] text-crimson mt-1 shrink-0">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span className="text-cream/80 text-lg leading-relaxed">{item}</span>
+                    </div>
+                  </Reveal>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="py-28 border-t border-white/5 bg-gradient-to-b from-ink to-black">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
@@ -74,6 +113,21 @@ export default function ServiceDetail({ service }: { service: Service }) {
         </div>
       </section>
 
+      {service.pullQuote && (
+        <section className="py-24 border-t border-white/5 bg-gradient-to-br from-burgundy/20 via-ink to-ink">
+          <div className="mx-auto max-w-4xl px-6 lg:px-10">
+            <Reveal>
+              <div className="flex items-start gap-6">
+                <span aria-hidden className="font-display text-7xl text-crimson/50 leading-none select-none">&ldquo;</span>
+                <p className="font-display italic text-2xl md:text-3xl lg:text-4xl text-cream/95 leading-snug">
+                  {service.pullQuote}
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
       {related.length > 0 && (
         <section className="py-28 border-t border-white/5">
           <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -86,7 +140,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 <div key={s.code} className="bg-ink p-6">
                   <div className="kicker mb-2">{s.code}</div>
                   <h3 className="font-display text-xl text-cream">{s.name}</h3>
-                  <p className="mt-3 text-cream/60 text-[0.85rem] leading-relaxed">{s.description}</p>
+                  <p className="mt-3 text-cream/60 text-[0.85rem] leading-relaxed">{s.pitch ?? s.description}</p>
                 </div>
               ))}
             </div>

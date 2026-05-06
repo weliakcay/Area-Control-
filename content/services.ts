@@ -1,14 +1,23 @@
-export type ServiceSlug = 'sistem-belgelendirme' | 'tedarikci-denetimi' | 'hijyen-gida-su';
+export type ServiceSlug = 'sistem-belgelendirme' | 'tedarikci-denetimi' | 'hijyen-denetimi';
+
+export type ScopeBlock = {
+  title: string;
+  intro?: string;
+  items: string[];
+};
 
 export type Service = {
   slug: ServiceSlug;
   number: '01' | '02' | '03';
   title: string;
   tagline: string;
+  teaserBenefit: string;
   summary: string;
   heroIntro: string;
   scope: string[];
+  scopeBlocks?: ScopeBlock[];
   benefits: string[];
+  pullQuote: string;
   relatedStandards: string[];
 };
 
@@ -17,70 +26,110 @@ export const services: Service[] = [
     slug: 'sistem-belgelendirme',
     number: '01',
     title: 'Sistem Belgelendirme',
-    tagline: 'Operasyonunuzun her katmanı için akredite belgelendirme.',
-    summary: 'ISO 9001\'den 22000\'e, uluslararası standartlarda sistemlerinizi belgelendirir; sürdürülebilir uyum kazandırırız.',
+    tagline: 'İşinizi uluslararası standartlarla tescilleyin.',
+    teaserBenefit: 'TÜRKAK akrediteli; ISO 9001\'den 22000\'e 8 yönetim sistemi standardı.',
+    summary:
+      'ISO 9001\'den 22000\'e, uluslararası geçerliliği olan sistem belgelendirme; süreçlerinizin kalitesini ve yönetim disiplininizi resmi onayla taçlandırıyoruz.',
     heroIntro:
-      'Sistem belgelendirme, kurumunuzun süreçlerini uluslararası bir disipline bağlamaktır. Kalite, gıda güvenliği, çevre, iş sağlığı ve bilgi güvenliği başta olmak üzere 16 farklı yönetim sistemi standardında TÜRKAK akrediteli belgelendirme hizmeti sunuyoruz.',
+      'Belgelendirme, sadece bir sertifika sahibi olmak değil; işletmenizin yönetim biçimini ve operasyonel kalitesini uluslararası geçerliliği olan bir dille dünyaya anlatmasıdır. Karmaşık süreçleri rehberliğimizle sadeleştiriyor, başarılarınızı resmi bir onaya dönüştürüyoruz.',
     scope: [
-      'Kapsam tespiti ve standart seçimi danışmanlığı',
-      'Boşluk analizi ve ön denetim',
-      'Belgelendirme denetimi (Evre 1 & Evre 2)',
-      'Belge düzenleme ve yıllık gözetim denetimleri',
-      'Yenileme denetimleri (3 yıllık döngü)',
+      'Ön analiz: mevcut sisteminizin standart gerekliliklerine uyum düzeyinin tespiti',
+      'Stratejik planlama: iş akışınızı aksatmayacak saha denetim takvimi',
+      'Saha denetimi: uzman denetçilerle süreçlerin yerinde incelenmesi ve raporlanması',
+      'Tescil ve sertifika teslimi',
+      'Yıllık gözetim denetimleri ve 3 yıllık yenileme döngüsü',
     ],
     benefits: [
-      'Uluslararası tanınırlık ve ihracat pazarında rekabet avantajı',
-      'Operasyonel verimlilik ve risk yönetimi',
-      'Müşteri ve tedarikçi nezdinde güven',
-      'Regülatif uyumun belgelenmesi',
+      'Pazara giriş ve prestij: ihracat ve büyük ihalelerde küresel öncelik',
+      'Sürdürülebilir güven: müşterilerinize "süreçlerim kontrol altında ve kalitem süreklidir" mesajı',
+      'Maliyet ve risk yönetimi: hatalar minimize, verimlilik artar, operasyonel maliyet düşer',
+      'Yasal uyumluluk: güncel regülasyonlara ve sektörel şartlara tam uyum',
     ],
-    relatedStandards: ['9001', '14001', '22000', '45001', '27001', '50001', '10002', '22301', '28000', '31000'],
+    pullQuote:
+      'Sertifikasyon bir yük değil, daha verimli ve karlı bir işletme olmanın yol haritasıdır. Geleceğinizi bugünden tescilleyin.',
+    relatedStandards: ['9001', '14001', '22000', '45001', '50001', '46001', '10002', '26000'],
   },
   {
     slug: 'tedarikci-denetimi',
     number: '02',
     title: 'Tedarikçi Denetimi',
-    tagline: 'Mal girdiğiniz kapıdan başlayan denetim.',
-    summary: 'Tedarikçilerinizi sahada denetler, risklerini görünür kılar; operasyon kalitesini kaynağında güvence altına alırız.',
+    tagline: 'Tedarikçiniz, sizin dışarıdaki imzanızdır.',
+    teaserBenefit: 'Evrak değil sahada inceleme: teknik, etik ve çevresel uyumun yerinde belgelenmesi.',
+    summary:
+      'Tedarik zincirinizin her halkasını sahada denetler; iş ortaklarınızın sizin standartlarınıza, etik değerlerinize ve sürdürülebilirlik beklentilerinize uyumunu belgeleriz.',
     heroIntro:
-      'Tedarikçi denetimi, mal ve hizmet aldığınız firmaların sizin standartlarınızla uyumunu doğrular. Otel ve restoran operasyonlarında girdi kalitesi, misafir deneyiminin sessiz garantörüdür.',
+      'Günümüzün karmaşık ticaret ağında başarınız, sadece kendi performansınıza değil; tedarikçilerinizin standartlarına ve yarınlara ne bıraktığına bağlıdır. Tedarik zincirinizin her halkasını titizlikle analiz ediyor; iş ortaklarınızın beklentilerinize, etik değerlerinize ve dünya standartlarına uyumunu sahada belgeliyoruz.',
     scope: [
-      'Tedarikçi risk sınıflandırması ve önceliklendirme',
-      'Saha denetimi (GMP, hijyen, kalite)',
-      'Dokümantasyon ve izlenebilirlik kontrolü',
-      'Denetim raporu ve düzeltici faaliyet takibi',
+      'Planlama: hedeflerinize, kalite kriterlerinize ve gelecek vizyonunuza uygun denetim takvimi',
+      'Saha denetimi: tedarikçi tesislerinde teknik, etik ve çevresel yerinde inceleme',
+      'Raporlama: bulgular, iyileştirme alanları ve gelişim fırsatlarının şeffaf analiz raporu',
+      'Takip: düzeltici faaliyetlerin ve gelişim sürecinin izlenmesi',
       'Yıllık periyodik tedarikçi değerlendirmesi',
     ],
     benefits: [
-      'Tedarik zincirinde öngörülebilirlik',
-      'Girdi kaynaklı şikayetlerin azalması',
-      'Regülasyon denetimlerinde hazır dokümantasyon',
-      'Tedarikçi performansının ölçülebilirliği',
+      'Güçlü risk yönetimi: finansal, operasyonel ve hukuki riskleri oluşmadan tespit',
+      'Kesintisiz ve kalıcı üretim: süreklilik ve ürün kalitesinin standart uyumu garanti altında',
+      'Doğaya ve insana saygı: çevre, etik çalışma koşulları ve iş güvenliği denetimiyle marka koruması',
+      'Geleceğe hazırlık: kaynakları verimli kullanan, sorumluluk alan tedarik zinciri',
+      'Maliyet optimizasyonu: hatalı üretimi azaltıp süreç verimliliğini artırarak gizli maliyetleri kaldırır',
     ],
-    relatedStandards: ['28000', '22000', 'GMP'],
+    pullQuote:
+      'Tedarikçiniz, sizin dışarıdaki imzanızdır. Bu imzanın hem kusursuz hem de kalıcı olduğundan emin olun.',
+    relatedStandards: ['9001', '14001', '28000', '45001', '26000', '31000'],
   },
   {
-    slug: 'hijyen-gida-su',
+    slug: 'hijyen-denetimi',
     number: '03',
-    title: 'Hijyen, Gıda & Su Denetimi',
-    tagline: 'Misafirinizin güvenli deneyimi için saha denetimi ve laboratuvar analizi.',
-    summary: 'Mutfak, büfe, havuz, depo — operasyonun tüm temas noktalarında hijyen denetimi ve akredite laboratuvar analizi.',
+    title: 'Hijyen ve Saha Denetimi',
+    tagline: 'Akıllı raporlama ile maksimum güven.',
+    teaserBenefit: 'Görsel kanıtlı, puanlı raporlama ve dijital panel üzerinden anlık erişim.',
+    summary:
+      'Mutfak, depo ve üretim alanları — tarafsız bir uzman bakışıyla hijyen ve operasyonel risklerinizi sizden önce tespit eder, akıllı raporlamayla markanızı güvence altına alırız.',
     heroIntro:
-      'Hijyen ve gıda güvenliği, otel ve restoran itibarının gözle görülmeyen ama her an fark edilen boyutudur. Sahada denetim ve laboratuvar analizini birleştirerek hem önlem hem belge üretiyoruz.',
+      'İşletmenizde yüksek standartları belirlemek bir başlangıçtır; bu standartları her gün aynı titizlikle korumak gerçek bir uzmanlık işidir. Tarafsız bir uzman bakışıyla sahadaki riske odaklanarak "işletme körlüğünü" ortadan kaldırıyor; geleneksel denetim anlayışını dijital altyapı ve akıllı raporlama ile birleştiriyoruz.',
     scope: [
-      'Mutfak ve büfe hijyen denetimi (ATP, sürüntü testleri)',
-      'Gıda mikrobiyolojik ve kimyasal analizi',
-      'İçme suyu, kullanma suyu ve havuz suyu analizi',
-      'Pestisit kalıntı analizi',
-      'Helal gıda uygunluk kontrolü',
-      'Legionella ve su sistemleri değerlendirmesi',
+      'Hijyen ve gıda güvenliği: hammadde girişinden sunum aşamasına kadar mutfak, depo ve üretim alanlarının yerinde incelenmesi',
+      'Operasyonel risk analizi: personel hijyeni, çapraz kontaminasyon riskleri ve soğuk zincir takibi',
+      'Kurumsal standart kontrolü: firmaya özel operasyonel kuralların sahadaki karşılığının ölçülmesi ve genel bakım durumunun raporlanması',
+      'Önleyici yaklaşım: müşteri şikayetlerini ve resmi denetim uygunsuzluklarını oluşmadan engelleyen proaktif çözümler',
+      'Görsel kanıtlı ve puanlı raporlama: her bulgunun fotoğrafla belgelenmesi, performansın net puanla ölçülmesi',
+      'Tekrar eden uygunsuzluk analizi: kronikleşen hataların otomatik tespiti',
+      'Trend ve kıyaslama (benchmarking): aylık periyotlarda şubeler arası performans karşılaştırması',
+      'Anlık erişim: dijital panel üzerinden geçmiş denetimlerle gelişim ivmesinin grafiklerle takibi',
+    ],
+    scopeBlocks: [
+      {
+        title: 'Profesyonel Denetim ve Hijyen Odaklı Çözümler',
+        intro:
+          'Denetimlerimizde sadece evrak takibi yapmıyor, doğrudan sahadaki riske odaklanarak "işletme körlüğünü" ortadan kaldırıyoruz.',
+        items: [
+          'Hijyen ve Gıda Güvenliği: hammadde girişinden sunum aşamasına kadar mutfak, depo ve üretim alanlarının profesyonel ekiplerce yerinde incelenmesi',
+          'Operasyonel Risk Analizi: personel hijyeni, çapraz kontaminasyon riskleri ve soğuk zincir takibi gibi kritik noktaların titizlikle denetlenmesi',
+          'Kurumsal Standart Kontrolü: firmanıza özel operasyonel kuralların sahada ne kadar karşılık bulduğunun ölçülmesi ve tesisin genel bakım durumunun raporlanması',
+          'Önleyici Yaklaşım: müşteri şikayetlerini ve resmi denetim uygunsuzluklarını henüz oluşmadan engelleyen proaktif çözümler',
+        ],
+      },
+      {
+        title: 'Dijital Altyapı ve Akıllı Raporlama Sistemi',
+        intro:
+          'Geleneksel denetim anlayışını, operasyonel performansınızı şeffaf ve ölçülebilir kılan modern yazılım çözümlerimizle birleştiriyoruz.',
+        items: [
+          'Görsel Kanıtlı ve Puanlı Raporlama: tespit edilen her bulguyu fotoğraflarla belgeliyor, işletme performansını net puanlarla ölçüyoruz',
+          'Tekrar Eden Uygunsuzluk Analizi: hangi hataların kronikleştiğini sistemimiz otomatik analiz eder; gelişim alanlarını rakamlarla görürsünüz',
+          'Trend ve Kıyaslama (Benchmarking): aylık periyotlarda hangi birimlerin gelişim gösterdiğini takip eder, şubeler arası kıyaslama yaparsınız',
+          'Anlık Erişim: raporlarınıza dijital panel üzerinden dilediğiniz an ulaşır, geçmiş denetimlerle gelişim ivmesini grafiklerle izlersiniz',
+        ],
+      },
     ],
     benefits: [
-      'Gıda kaynaklı risklerin erken tespiti',
-      'Regülasyonlara (Tarım Bakanlığı, İl Sağlık) uyum',
-      'Misafir şikayetlerinde belgeye dayalı savunma',
-      'Operasyon ekibinin süreklilik kültürü',
+      'Sahadaki risklerin "işletme körlüğüne" girmeden erken tespiti',
+      'Operasyonel performansın şeffaf ve ölçülebilir kılınması',
+      'Müşteri şikayetlerinde belgeye dayalı savunma',
+      'Şubeler arası kıyaslama ile sürdürülebilir gelişim ivmesi',
+      'Resmi denetim uygunsuzluklarına karşı proaktif hazırlık',
     ],
-    relatedStandards: ['22000', 'GMP', 'Helal'],
+    pullQuote:
+      'Ölçemediğiniz süreci yönetemezsiniz. Dijital altyapımızla hijyen standartlarınızı veriye dayalı bir başarı hikâyesine dönüştürüyoruz.',
+    relatedStandards: ['22000', '9001', '45001', 'GMP'],
   },
 ];

@@ -27,9 +27,9 @@ export const faqs: Faq[] = [
       'Evet. Odak alanımız otel ve restoran olsa da, gıda üretim tesisleri, sağlık kuruluşları, üretim firmaları ve hizmet sektöründe yer alan işletmelere de belgelendirme ve denetim hizmeti sunuyoruz.',
   },
   {
-    question: 'Hijyen analizi ne sıklıkta yapılmalı?',
+    question: 'Hijyen denetimi ne sıklıkta yapılmalı?',
     answer:
-      'Operasyon yoğunluğuna göre değişir; genel öneri mutfak ve büfe hijyen denetiminin aylık, su analizlerinin en az üç aylık, Legionella kontrolünün yıllık periyotlarda yapılmasıdır. Risk bazlı özel plan çıkartıyoruz.',
+      'Operasyon yoğunluğuna göre değişir; genel öneri mutfak ve depo hijyen denetiminin aylık periyotlarda yapılmasıdır. Risk bazlı özel plan çıkartıyor, dijital panel üzerinden geçmiş denetimlerle gelişim ivmenizi takip edebiliyorsunuz.',
   },
   {
     question: 'Tedarikçi denetimi zorunlu mu?',
