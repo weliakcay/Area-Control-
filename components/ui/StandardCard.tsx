@@ -9,6 +9,7 @@ const categoryColor: Record<Standard['category'], string> = {
   energy: 'from-yellow-900/20',
   supply: 'from-purple-900/20',
   medical: 'from-rose-900/20',
+  social: 'from-teal-900/20',
   other: 'from-white/10',
 };
 
