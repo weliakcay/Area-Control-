@@ -46,8 +46,11 @@ const orgLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={`${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable}`}>
-      <body>
+    <html lang="tr" translate="no" className={`${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable}`}>
+      <head>
+        <meta name="google" content="notranslate" />
+      </head>
+      <body className="notranslate">
         <JsonLd id="ld-org" data={orgLd} />
         <LenisProvider>
           <Header />
