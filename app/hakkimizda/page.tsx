@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const TIMELINE = [
-  { year: '2009', text: 'SigmaCert belgelendirme altyapısı kurulur; kurucu ekip uluslararası denetim deneyimiyle yola çıkar.' },
+  { year: '2009', text: 'Kurucu ekip, uluslararası denetim ve belgelendirme deneyimiyle yola çıkar.' },
   { year: '2018', text: 'Area Control Anonim Şirketi olarak Antalya\'da faaliyete başlar; otel ve restoran sektörüne özel odaklanma.' },
   { year: '2021', text: 'Hijyen ve saha denetim programı dijital raporlama altyapısıyla entegre edilir; görsel kanıtlı puanlı denetim modeline geçilir.' },
-  { year: '2024', text: 'TÜRKAK akreditasyon kapsamı 18 standarda genişler; tedarikçi denetim programı ayrı bir disiplin olarak yapılandırılır.' },
+  { year: '2024', text: 'Yönetim sistemi belgelendirme kapsamı 18 standarda genişler; tedarikçi denetim programı ayrı bir disiplin olarak yapılandırılır.' },
 ];
 
 const VALUES = [
@@ -47,7 +47,7 @@ export default function Hakkimizda() {
             Güven, <span className="italic text-crimson font-normal">editoryel</span> titizliktir.
           </h1>
           <p className="mt-8 max-w-2xl text-cream/75 leading-relaxed">
-            Area Control, Antalya merkezli bağımsız bir belgelendirme, gözetim ve teknik kontrol şirketidir. SigmaCert ortaklığı üzerinden TÜRKAK akreditasyonuyla çalışır; otel ve restoran operasyonlarının kalitesini uluslararası bir disipline bağlar.
+            Area Control, Antalya merkezli bağımsız bir belgelendirme, gözetim ve teknik kontrol şirketidir. Otel ve restoran operasyonlarının kalitesini uluslararası yönetim sistemi standartlarına bağlar; sahada veriye dayalı denetim disiplini uygular.
           </p>
         </div>
       </section>
@@ -130,17 +130,6 @@ export default function Hakkimizda() {
         </div>
       </section>
 
-      <section className="py-28 border-t border-white/5">
-        <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
-          <KickerLabel>Ortaklık</KickerLabel>
-          <h2 className="mt-5 display-lg text-cream max-w-3xl mx-auto">
-            SigmaCert akreditasyonu, Area Control saha deneyimi.
-          </h2>
-          <p className="mt-8 text-cream/75 max-w-2xl mx-auto leading-relaxed">
-            Sistem belgelendirme hizmetlerini, 2009&rsquo;dan bu yana alanında çalışan SigmaCert&rsquo;in TÜRKAK akreditasyonu altında sunuyoruz. Helal belgelendirmede HAK kapsamı geçerlidir. Bu yapı, hem uluslararası tanınırlık hem de yerel saha hızını aynı anda sağlar.
-          </p>
-        </div>
-      </section>
     </>
   );
 }

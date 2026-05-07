@@ -27,7 +27,7 @@ export const services: Service[] = [
     number: '01',
     title: 'Sistem Belgelendirme',
     tagline: 'İşinizi uluslararası standartlarla tescilleyin.',
-    teaserBenefit: 'TÜRKAK akrediteli; ISO 9001\'den 22000\'e 8 yönetim sistemi standardı.',
+    teaserBenefit: 'ISO 9001\'den 22000\'e 8 farklı yönetim sistemi standardında belgelendirme.',
     summary:
       'ISO 9001\'den 22000\'e, uluslararası geçerliliği olan sistem belgelendirme; süreçlerinizin kalitesini ve yönetim disiplininizi resmi onayla taçlandırıyoruz.',
     heroIntro:

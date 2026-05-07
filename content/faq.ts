@@ -7,11 +7,6 @@ export const faqs: Faq[] = [
       'Standarda ve işletme büyüklüğüne göre değişmekle birlikte, ön denetimden belgelendirmeye tipik süreç 6-12 haftadır. Hazırlık düzeyiniz yüksekse daha hızlı tamamlanabilir; kapsamlı eksikler varsa düzeltme için ek süre gerekebilir.',
   },
   {
-    question: 'Hangi akreditasyon kurumu üzerinden belgelendirme yapıyorsunuz?',
-    answer:
-      'Sistem belgelendirme hizmetlerimizi SigmaCert ortaklığı üzerinden TÜRKAK akreditasyonu ile sunuyoruz. Helal belgelendirmede HAK akreditasyonu kullanılmaktadır.',
-  },
-  {
     question: 'Denetim ücretleri neye göre belirleniyor?',
     answer:
       'Fiyat; seçilen standart, kapsam, çalışan sayısı, lokasyon sayısı ve denetim süresine göre belirlenir. Teklif aşamasında net bütçe paylaşırız; sürpriz kalem çıkarmayız.',

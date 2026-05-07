@@ -3,7 +3,7 @@ export const site = {
   legalName: 'Area Control Belgelendirme Gözetim ve Teknik Kontrol Hizmetleri A.Ş.',
   tagline: 'Sahada kanıtlanan güven.',
   description:
-    'Antalya merkezli, TÜRKAK akreditasyonu ile otel ve restoran işletmeleri için sistem belgelendirme, tedarikçi denetimi ve hijyen denetimi hizmetleri.',
+    'Antalya merkezli, otel ve restoran işletmeleri için sistem belgelendirme, tedarikçi denetimi ve hijyen denetimi hizmetleri.',
   address: {
     line1: 'Zerdalilik Mah. 1380 Sok.',
     line2: 'Gülgün Apt. Sitesi No:8/6',
@@ -17,13 +17,12 @@ export const site = {
   whatsappMessage: 'Merhaba, Area Control hizmetleri hakkında bilgi almak istiyorum.',
   email: 'info@bixkurumsal.com',
   accreditations: [
-    { code: 'TÜRKAK', note: 'SigmaCert ortaklığı üzerinden' },
     { code: 'HAK', note: 'Helal belgelendirme akreditasyonu' },
   ],
   metrics: [
     { value: '150+', label: 'Tamamlanan Denetim' },
     { value: '18', label: 'Yönetim Sistemi Standardı' },
-    { value: 'TÜRKAK', label: 'Akreditasyon' },
+    { value: 'Bağımsız', label: 'Denetim Disiplini' },
   ],
   url: 'https://areacontrol.com.tr',
   web3forms: {
