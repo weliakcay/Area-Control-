@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { fontDisplay, fontSans, fontMono } from '@/lib/fonts';
 import LenisProvider from '@/components/layout/LenisProvider';
+import HydrationGuard from '@/components/layout/HydrationGuard';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import JsonLd from '@/components/ui/JsonLd';
@@ -46,17 +47,24 @@ const orgLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" translate="no" className={`${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable}`}>
+    <html
+      lang="tr"
+      translate="no"
+      suppressHydrationWarning
+      className={`${fontDisplay.variable} ${fontSans.variable} ${fontMono.variable}`}
+    >
       <head>
         <meta name="google" content="notranslate" />
       </head>
-      <body className="notranslate">
+      <body className="notranslate" suppressHydrationWarning>
         <JsonLd id="ld-org" data={orgLd} />
-        <LenisProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </LenisProvider>
+        <HydrationGuard>
+          <LenisProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </LenisProvider>
+        </HydrationGuard>
       </body>
     </html>
   );
