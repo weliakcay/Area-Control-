@@ -12,7 +12,7 @@ export default function CtaFooter() {
   const letters = title.split('');
 
   return (
-    <section className="relative py-28 md:py-36 border-t border-white/5 bg-gradient-to-b from-ink to-black overflow-hidden">
+    <section className="relative py-28 md:py-36 border-t border-white/5 bg-ink-soft overflow-hidden">
       <div aria-hidden className="absolute -top-40 -right-40 w-[40rem] h-[40rem] rounded-full bg-crimson/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
@@ -33,7 +33,7 @@ export default function CtaFooter() {
           ))}
         </h2>
 
-        <Reveal as="p" className="mt-8 max-w-xl text-cream/65 leading-relaxed">
+        <Reveal as="p" className="mt-8 max-w-xl text-cream/75 leading-relaxed">
           {tr.cta.intro}
         </Reveal>
 

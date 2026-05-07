@@ -14,7 +14,7 @@ export default function ServicesTriple() {
           </div>
           <div className="md:col-span-8 space-y-5">
             <Reveal as="h2" className="display-lg text-cream">{tr.services.title}</Reveal>
-            <Reveal as="p" delay={0.1} className="text-cream/65 max-w-xl leading-relaxed">
+            <Reveal as="p" delay={0.1} className="text-cream/75 max-w-xl leading-relaxed">
               {tr.services.intro}
             </Reveal>
           </div>

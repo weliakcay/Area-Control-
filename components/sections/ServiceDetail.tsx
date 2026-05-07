@@ -25,7 +25,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
             <div className="flex-1 min-w-[280px]">
               <KickerLabel>{service.title}</KickerLabel>
               <h1 className="mt-5 display-xl text-cream max-w-3xl">{service.tagline}</h1>
-              <p className="mt-8 max-w-2xl text-cream/65 leading-relaxed text-lg">
+              <p className="mt-8 max-w-2xl text-cream/75 leading-relaxed text-lg">
                 {service.heroIntro}
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
@@ -41,7 +41,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
         service.scopeBlocks.map((block, blockIndex) => (
           <section
             key={block.title}
-            className={`py-28 border-t border-white/5 ${blockIndex % 2 === 1 ? 'bg-gradient-to-b from-ink to-black' : ''}`}
+            className={`py-28 border-t border-white/5 ${blockIndex % 2 === 1 ? 'bg-ink-soft' : ''}`}
           >
             <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
               <div className="md:col-span-4">
@@ -54,7 +54,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                   {block.title}
                 </Reveal>
                 {block.intro && (
-                  <Reveal as="p" delay={0.05} className="text-cream/65 leading-relaxed mb-10 max-w-2xl">
+                  <Reveal as="p" delay={0.05} className="text-cream/75 leading-relaxed mb-10 max-w-2xl">
                     {block.intro}
                   </Reveal>
                 )}
@@ -97,7 +97,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
         </section>
       )}
 
-      <section className="py-28 border-t border-white/5 bg-gradient-to-b from-ink to-black">
+      <section className="py-28 border-t border-white/5 bg-ink-soft">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4"><Reveal><KickerLabel>Faydalar</KickerLabel></Reveal></div>
           <div className="md:col-span-8 grid md:grid-cols-2 gap-px bg-white/5 border border-white/5">
@@ -114,7 +114,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
       </section>
 
       {service.pullQuote && (
-        <section className="py-24 border-t border-white/5 bg-gradient-to-br from-burgundy/20 via-ink to-ink">
+        <section className="py-24 border-t border-white/5 bg-gradient-to-br from-burgundy/15 via-ink-soft to-ink-soft">
           <div className="mx-auto max-w-4xl px-6 lg:px-10">
             <Reveal>
               <div className="flex items-start gap-6">
@@ -174,7 +174,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
           <h2 className="display-lg text-cream">
             Kapsamınıza özel teklif için <span className="italic text-crimson font-normal">buradayız.</span>
           </h2>
-          <p className="mt-6 text-cream/65 max-w-xl mx-auto leading-relaxed">
+          <p className="mt-6 text-cream/75 max-w-xl mx-auto leading-relaxed">
             Operasyonunuzu tanıyalım, size uygun standartları birlikte belirleyelim.
           </p>
           <div className="mt-10 flex justify-center gap-4 flex-wrap">

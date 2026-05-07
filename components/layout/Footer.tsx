@@ -5,7 +5,7 @@ import tr from '@/messages/tr.json';
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-white/5 pt-16 pb-10">
+    <footer className="bg-ink-soft border-t border-white/5 pt-16 pb-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-3 mb-5">

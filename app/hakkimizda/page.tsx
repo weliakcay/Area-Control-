@@ -46,7 +46,7 @@ export default function Hakkimizda() {
           <h1 className="mt-6 display-xl text-cream max-w-4xl">
             Güven, <span className="italic text-crimson font-normal">editoryel</span> titizliktir.
           </h1>
-          <p className="mt-8 max-w-2xl text-cream/65 leading-relaxed">
+          <p className="mt-8 max-w-2xl text-cream/75 leading-relaxed">
             Area Control, Antalya merkezli bağımsız bir belgelendirme, gözetim ve teknik kontrol şirketidir. SigmaCert ortaklığı üzerinden TÜRKAK akreditasyonuyla çalışır; otel ve restoran operasyonlarının kalitesini uluslararası bir disipline bağlar.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function Hakkimizda() {
         </div>
       </section>
 
-      <section className="py-28 border-t border-white/5 bg-gradient-to-b from-ink to-black">
+      <section className="py-28 border-t border-white/5 bg-ink-soft">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <Reveal><KickerLabel>Yaklaşımımız</KickerLabel></Reveal>
@@ -103,7 +103,7 @@ export default function Hakkimizda() {
                   </div>
                   <div className="md:col-span-9">
                     <h3 className="font-display text-2xl text-cream">{a.title}</h3>
-                    <p className="mt-3 text-cream/65 leading-relaxed">{a.text}</p>
+                    <p className="mt-3 text-cream/75 leading-relaxed">{a.text}</p>
                   </div>
                 </div>
               </Reveal>
@@ -122,7 +122,7 @@ export default function Hakkimizda() {
                   <div className="md:col-span-3 font-display text-3xl md:text-4xl text-crimson leading-none">
                     {t.year}
                   </div>
-                  <p className="md:col-span-9 text-cream/65 leading-relaxed">{t.text}</p>
+                  <p className="md:col-span-9 text-cream/75 leading-relaxed">{t.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -136,7 +136,7 @@ export default function Hakkimizda() {
           <h2 className="mt-5 display-lg text-cream max-w-3xl mx-auto">
             SigmaCert akreditasyonu, Area Control saha deneyimi.
           </h2>
-          <p className="mt-8 text-cream/65 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-8 text-cream/75 max-w-2xl mx-auto leading-relaxed">
             Sistem belgelendirme hizmetlerini, 2009&rsquo;dan bu yana alanında çalışan SigmaCert&rsquo;in TÜRKAK akreditasyonu altında sunuyoruz. Helal belgelendirmede HAK kapsamı geçerlidir. Bu yapı, hem uluslararası tanınırlık hem de yerel saha hızını aynı anda sağlar.
           </p>
         </div>

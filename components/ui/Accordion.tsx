@@ -39,7 +39,7 @@ export default function Accordion({ items }: { items: Item[] }) {
                   transition={{ duration: 0.4, ease: [0.22, 0.8, 0.36, 1] }}
                   className="overflow-hidden"
                 >
-                  <p className="pb-8 pr-12 text-cream/65 leading-relaxed max-w-3xl">
+                  <p className="pb-8 pr-12 text-cream/75 leading-relaxed max-w-3xl">
                     {it.answer}
                   </p>
                 </motion.div>

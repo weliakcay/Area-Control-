@@ -23,7 +23,7 @@ export default function VideoQuote() {
   }, []);
 
   return (
-    <section className="relative border-t border-white/5 bg-black">
+    <section className="relative border-t border-white/5 bg-ink-soft">
       <div className="relative h-[70vh] md:h-[85vh] overflow-hidden">
         <video
           ref={videoRef}
@@ -37,7 +37,7 @@ export default function VideoQuote() {
           <source src="/media/hero-video.webm" type="video/webm" />
           <source src="/media/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/55" />
         <div className="relative z-10 h-full flex flex-col justify-end p-6 lg:p-20 max-w-5xl mx-auto">
           <Reveal><KickerLabel>{tr.video.kicker}</KickerLabel></Reveal>
           <Reveal as="p" delay={0.1} className="mt-8 font-display italic text-2xl md:text-4xl lg:text-5xl text-cream leading-tight max-w-3xl">

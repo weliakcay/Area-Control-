@@ -34,7 +34,7 @@ export default function Iletisim() {
           <h1 className="mt-6 display-xl text-cream max-w-4xl">
             Bir fincan kahve mesafesindeyiz.
           </h1>
-          <p className="mt-6 text-cream/65 max-w-xl leading-relaxed">
+          <p className="mt-6 text-cream/75 max-w-xl leading-relaxed">
             Antalya merkezli ekibimiz, Türkiye&rsquo;nin her yerinden projeleri yürütüyor. Size uygun yöntemle başlayalım.
           </p>
         </div>
@@ -110,7 +110,7 @@ export default function Iletisim() {
                 title="Area Control konum"
               />
             </div>
-            <address className="not-italic mt-6 text-cream/65 leading-relaxed">
+            <address className="not-italic mt-6 text-cream/75 leading-relaxed">
               <div className="font-display text-xl text-cream">{site.legalName}</div>
               <div className="mt-3">{site.address.line1}</div>
               <div>{site.address.line2}</div>

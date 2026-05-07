@@ -99,7 +99,7 @@ export default function ProcessHorizontal() {
                   <h3 className="font-display text-3xl md:text-5xl text-cream leading-tight mb-6">
                     {step.title}
                   </h3>
-                  <p className="text-cream/65 leading-relaxed text-lg max-w-xl">
+                  <p className="text-cream/75 leading-relaxed text-lg max-w-xl">
                     {step.description}
                   </p>
                   <div className="mt-10 h-px w-full bg-white/5 relative overflow-hidden">

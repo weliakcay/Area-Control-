@@ -31,7 +31,7 @@ export default function Hero() {
           style={{ backgroundImage: "url('/media/hero-poster.jpg')" }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_22%_28%,rgba(184,149,106,0.28),transparent_60%),radial-gradient(ellipse_at_78%_82%,rgba(160,20,26,0.32),transparent_55%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/15 via-ink/30 to-ink/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/10 via-ink/25 to-ink/70" />
       </motion.div>
 
       <motion.div style={reduce ? undefined : { opacity }} className="relative mx-auto max-w-7xl px-6 lg:px-10 w-full">
