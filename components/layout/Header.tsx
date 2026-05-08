@@ -25,19 +25,16 @@ export default function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group" aria-label={site.name}>
-          <span className="inline-flex items-center justify-center w-9 h-9 rounded-sm bg-cream/95 p-1">
-            <Image src="/logo.svg" alt={site.name} width={28} height={28} priority />
-          </span>
-          <span className="hidden sm:inline-flex flex-col leading-none">
-            <span className="font-display text-[0.95rem] tracking-wide text-cream">
-              AREA<span className="text-crimson">CONTROL</span>
-            </span>
-            <span className="text-[0.55rem] tracking-[0.25em] uppercase text-cream/45 font-mono mt-0.5">
-              Belgelendirme · Gözetim · Kontrol
-            </span>
-          </span>
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
+        <Link href="/" className="inline-flex items-center group" aria-label={site.name}>
+          <Image
+            src="/logo.svg"
+            alt={site.name}
+            width={260}
+            height={64}
+            priority
+            className="h-12 md:h-14 w-auto"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-[0.82rem] tracking-wide text-cream/75">

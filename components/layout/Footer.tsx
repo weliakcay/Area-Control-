@@ -8,13 +8,8 @@ export default function Footer() {
     <footer className="bg-ink-soft border-t border-white/5 pt-16 pb-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div className="col-span-2 md:col-span-1">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-sm bg-cream p-1.5">
-              <Image src="/logo.svg" alt={site.name} width={28} height={28} />
-            </span>
-            <span className="font-display text-cream text-lg">
-              AREA<span className="text-crimson">CONTROL</span>
-            </span>
+          <div className="mb-5">
+            <Image src="/logo.svg" alt={site.name} width={220} height={54} className="h-11 w-auto" />
           </div>
           <p className="text-cream/55 text-[0.82rem] leading-relaxed max-w-xs">
             {tr.footer.tagline}
