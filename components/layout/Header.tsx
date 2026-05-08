@@ -25,15 +25,15 @@ export default function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 h-24 flex items-center justify-between">
         <Link href="/" className="inline-flex items-center group" aria-label={site.name}>
           <Image
             src="/logo.svg"
             alt={site.name}
-            width={260}
-            height={64}
+            width={360}
+            height={104}
             priority
-            className="h-12 md:h-14 w-auto"
+            className="h-16 md:h-20 w-auto"
           />
         </Link>
 
