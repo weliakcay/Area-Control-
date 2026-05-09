@@ -2,9 +2,9 @@ export type Faq = { question: string; answer: string };
 
 export const faqs: Faq[] = [
   {
-    question: 'Belgelendirme süreci ne kadar sürüyor?',
+    question: 'Uygunluk değerlendirme süreci ne kadar sürüyor?',
     answer:
-      'Standarda ve işletme büyüklüğüne göre değişmekle birlikte, ön denetimden belgelendirmeye tipik süreç 6-12 haftadır. Hazırlık düzeyiniz yüksekse daha hızlı tamamlanabilir; kapsamlı eksikler varsa düzeltme için ek süre gerekebilir.',
+      'Standarda ve işletme büyüklüğüne göre değişmekle birlikte, ön denetimden uygunluk değerlendirmesine tipik süreç 6-12 haftadır. Hazırlık düzeyiniz yüksekse daha hızlı tamamlanabilir; kapsamlı eksikler varsa düzeltme için ek süre gerekebilir.',
   },
   {
     question: 'Denetim ücretleri neye göre belirleniyor?',
@@ -19,7 +19,7 @@ export const faqs: Faq[] = [
   {
     question: 'Otel dışındaki sektörlere de hizmet veriyor musunuz?',
     answer:
-      'Evet. Odak alanımız otel ve restoran olsa da, gıda üretim tesisleri, sağlık kuruluşları, üretim firmaları ve hizmet sektöründe yer alan işletmelere de belgelendirme ve denetim hizmeti sunuyoruz.',
+      'Evet. Odak alanımız otel ve restoran olsa da, gıda üretim tesisleri, sağlık kuruluşları, üretim firmaları ve hizmet sektöründe yer alan işletmelere de uygunluk değerlendirme ve denetim hizmeti sunuyoruz.',
   },
   {
     question: 'Hijyen denetimi ne sıklıkta yapılmalı?',

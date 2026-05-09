@@ -13,11 +13,11 @@ export const processSteps: ProcessStep[] = [
   {
     number: '02',
     title: 'Ön Denetim',
-    description: 'Hazırlık düzeyinizi değerlendirir, boşluk analizini raporlarız. Belgelendirmeye girmeden önce eksikler netleşir.',
+    description: 'Hazırlık düzeyinizi değerlendirir, boşluk analizini raporlarız. Uygunluk değerlendirmesine girmeden önce eksikler netleşir.',
   },
   {
     number: '03',
-    title: 'Belgelendirme Denetimi',
+    title: 'Uygunluk Değerlendirme Denetimi',
     description: 'Bağımsız denetçi sahada kapsamlı kontrol gerçekleştirir; uyum kanıtlanır, belge düzenlenir.',
   },
   {

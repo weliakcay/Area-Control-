@@ -25,19 +25,21 @@ export const services: Service[] = [
   {
     slug: 'sistem-belgelendirme',
     number: '01',
-    title: 'Sistem Belgelendirme',
+    title: 'Sistem Uygunluk Değerlendirmesi',
     tagline: 'İşinizi uluslararası standartlarla tescilleyin.',
-    teaserBenefit: 'ISO 9001\'den 22000\'e 8 farklı yönetim sistemi standardında belgelendirme.',
+    teaserBenefit: 'ISO 9001\'den 22000\'e 8 farklı yönetim sistemi standardında uygunluk değerlendirmesi.',
     summary:
-      'ISO 9001\'den 22000\'e, uluslararası geçerliliği olan sistem belgelendirme; süreçlerinizin kalitesini ve yönetim disiplininizi resmi onayla taçlandırıyoruz.',
+      'ISO 9001\'den 22000\'e, uluslararası geçerliliği olan sistem uygunluk değerlendirmesi; süreçlerinizin kalitesini ve yönetim disiplininizi resmi onayla taçlandırıyoruz.',
     heroIntro:
-      'Belgelendirme, sadece bir sertifika sahibi olmak değil; işletmenizin yönetim biçimini ve operasyonel kalitesini uluslararası geçerliliği olan bir dille dünyaya anlatmasıdır. Karmaşık süreçleri rehberliğimizle sadeleştiriyor, başarılarınızı resmi bir onaya dönüştürüyoruz.',
+      'Uygunluk değerlendirmesi, sadece bir sertifika sahibi olmak değil; işletmenizin yönetim biçimini ve operasyonel kalitesini uluslararası geçerliliği olan bir dille dünyaya anlatmasıdır. Karmaşık süreçleri rehberliğimizle sadeleştiriyor, başarılarınızı resmi bir onaya dönüştürüyoruz.',
     scope: [
       'Ön analiz: mevcut sisteminizin standart gerekliliklerine uyum düzeyinin tespiti',
       'Stratejik planlama: iş akışınızı aksatmayacak saha denetim takvimi',
       'Saha denetimi: uzman denetçilerle süreçlerin yerinde incelenmesi ve raporlanması',
       'Tescil ve sertifika teslimi',
       'Yıllık gözetim denetimleri ve 3 yıllık yenileme döngüsü',
+      'ISO 20400 Rehberliğinde Sürdürülebilir Satın Alma Değerlendirmesi',
+      'Adil Ticaret ve Etik Tedarik Değerlendirmesi',
     ],
     benefits: [
       'Pazara giriş ve prestij: ihracat ve büyük ihalelerde küresel öncelik',

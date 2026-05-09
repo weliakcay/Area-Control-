@@ -6,14 +6,14 @@ import { site } from '@/content/site';
 
 export const metadata: Metadata = {
   title: 'Hakkımızda',
-  description: `${site.name}, Antalya merkezli bağımsız bir belgelendirme ve denetim şirketidir.`,
+  description: `${site.name}, Antalya merkezli bağımsız bir uygunluk değerlendirme ve denetim şirketidir.`,
 };
 
 const TIMELINE = [
-  { year: '2009', text: 'Kurucu ekip, uluslararası denetim ve belgelendirme deneyimiyle yola çıkar.' },
+  { year: '2009', text: 'Kurucu ekip, uluslararası denetim ve uygunluk değerlendirme deneyimiyle yola çıkar.' },
   { year: '2018', text: 'Area Control Anonim Şirketi olarak Antalya\'da faaliyete başlar; otel ve restoran sektörüne özel odaklanma.' },
   { year: '2021', text: 'Hijyen ve saha denetim programı dijital raporlama altyapısıyla entegre edilir; görsel kanıtlı puanlı denetim modeline geçilir.' },
-  { year: '2024', text: 'Yönetim sistemi belgelendirme kapsamı 18 standarda genişler; tedarikçi denetim programı ayrı bir disiplin olarak yapılandırılır.' },
+  { year: '2024', text: 'Yönetim sistemi uygunluk değerlendirme kapsamı 18 standarda genişler; tedarikçi denetim programı ayrı bir disiplin olarak yapılandırılır.' },
 ];
 
 const VALUES = [
@@ -47,7 +47,7 @@ export default function Hakkimizda() {
             Güven, <span className="italic text-crimson font-normal">editoryel</span> titizliktir.
           </h1>
           <p className="mt-8 max-w-2xl text-cream/75 leading-relaxed">
-            Area Control, Antalya merkezli bağımsız bir belgelendirme, gözetim ve teknik kontrol şirketidir. Otel ve restoran operasyonlarının kalitesini uluslararası yönetim sistemi standartlarına bağlar; sahada veriye dayalı denetim disiplini uygular.
+            Area Control, Antalya merkezli bağımsız bir uygunluk değerlendirme, gözetim ve teknik kontrol şirketidir. Otel ve restoran operasyonlarının kalitesini uluslararası yönetim sistemi standartlarına bağlar; sahada veriye dayalı denetim disiplini uygular.
           </p>
         </div>
       </section>

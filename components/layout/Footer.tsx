@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <h4 className="kicker mb-4">{tr.footer.servicesHeading}</h4>
           <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.85rem]">
-            <li><Link href="/hizmetler/sistem-belgelendirme" className="hover:text-crimson">Sistem Belgelendirme</Link></li>
+            <li><Link href="/hizmetler/sistem-belgelendirme" className="hover:text-crimson">Sistem Uygunluk Değerlendirmesi</Link></li>
             <li><Link href="/hizmetler/tedarikci-denetimi" className="hover:text-crimson">Tedarikçi Denetimi</Link></li>
             <li><Link href="/hizmetler/hijyen-denetimi" className="hover:text-crimson">Hijyen ve Saha Denetimi</Link></li>
           </ul>

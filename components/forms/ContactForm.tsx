@@ -54,7 +54,7 @@ export default function ContactForm() {
           className="bg-transparent border border-white/10 px-4 py-3 text-cream focus:border-crimson focus:outline-none"
         >
           <option value="" disabled>{tr.cta.form.servicePlaceholder}</option>
-          <option value="sistem-belgelendirme">Sistem Belgelendirme</option>
+          <option value="sistem-belgelendirme">Sistem Uygunluk Değerlendirmesi</option>
           <option value="tedarikci-denetimi">Tedarikçi Denetimi</option>
           <option value="hijyen-denetimi">Hijyen ve Saha Denetimi</option>
           <option value="diger">{tr.cta.form.serviceOther}</option>

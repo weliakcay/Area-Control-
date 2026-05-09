@@ -3,7 +3,7 @@ export const site = {
   legalName: 'Area Control Belgelendirme Gözetim ve Teknik Kontrol Hizmetleri A.Ş.',
   tagline: 'Sahada kanıtlanan güven.',
   description:
-    'Antalya merkezli, otel ve restoran işletmeleri için sistem belgelendirme, tedarikçi denetimi ve hijyen denetimi hizmetleri.',
+    'Antalya merkezli, otel ve restoran işletmeleri için sistem uygunluk değerlendirmesi, tedarikçi denetimi ve hijyen denetimi hizmetleri.',
   address: {
     line1: 'Zerdalilik Mah. 1380 Sok.',
     line2: 'Gülgün Apt. Sitesi No:8/6',

@@ -44,7 +44,7 @@ export default function Header() {
             </Link>
             <div className="absolute left-0 top-full mt-4 w-72 bg-ink/95 backdrop-blur-md border border-white/5 p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <Link href="/hizmetler/sistem-belgelendirme" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
-                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">01</span>Sistem Belgelendirme
+                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">01</span>Sistem Uygunluk Değerlendirmesi
               </Link>
               <Link href="/hizmetler/tedarikci-denetimi" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
                 <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">02</span>Tedarikçi Denetimi
@@ -82,7 +82,7 @@ export default function Header() {
 
       {menuOpen && (
         <div className="md:hidden bg-ink/95 backdrop-blur-md border-t border-white/5 px-6 py-6 flex flex-col gap-4">
-          <Link href="/hizmetler/sistem-belgelendirme" onClick={() => setMenuOpen(false)} className="text-cream/80">Sistem Belgelendirme</Link>
+          <Link href="/hizmetler/sistem-belgelendirme" onClick={() => setMenuOpen(false)} className="text-cream/80">Sistem Uygunluk Değerlendirmesi</Link>
           <Link href="/hizmetler/tedarikci-denetimi" onClick={() => setMenuOpen(false)} className="text-cream/80">Tedarikçi Denetimi</Link>
           <Link href="/hizmetler/hijyen-denetimi" onClick={() => setMenuOpen(false)} className="text-cream/80">Hijyen ve Saha Denetimi</Link>
           <Link href="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-cream/80">{tr.nav.about}</Link>

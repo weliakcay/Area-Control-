@@ -6,7 +6,7 @@
     "cta": "Teklif Al"
   },
   "hero": {
-    "kicker": "Certified Trust · Belgelendirme · Denetim · Kontrol",
+    "kicker": "Certified Trust · Uygunluk Değerlendirme · Denetim · Kontrol",
     "titleBefore": "Güven,",
     "titleItalic": "sahada",
     "titleAfter": " kanıtlanır.",
@@ -16,24 +16,24 @@
   },
   "about": {
     "kicker": "01 · Biz Kimiz",
-    "title": "Belgelendirme yüzeysel değil, sistemsel bir disiplindir.",
-    "p1": "Area Control, Antalya merkezli; otel ve restoran operasyonlarının kalitesini uluslararası standartlara bağlayan bağımsız bir belgelendirme ve denetim şirketidir.",
+    "title": "Uygunluk değerlendirmesi yüzeysel değil, sistemsel bir disiplindir.",
+    "p1": "Area Control, Antalya merkezli; otel ve restoran operasyonlarının kalitesini uluslararası standartlara bağlayan bağımsız bir uygunluk değerlendirme ve denetim şirketidir.",
     "p2": "Bağımsız bir denetim disiplini olarak çalışırız. Amacımız sertifika toplamak değil, misafirinize sunduğunuz güvenin görünür ve ölçülebilir kanıtını oluşturmaktır."
   },
   "services": {
     "kicker": "02 · Hizmetler",
     "title": "Üç başlık. Tek bir ortak.",
-    "intro": "Sistem belgelendirmeden saha denetimine, operasyonunuzun tüm temas noktalarında yanındayız."
+    "intro": "Sistem uygunluk değerlendirmesinden saha denetimine, operasyonunuzun tüm temas noktalarında yanındayız."
   },
   "process": {
     "kicker": "03 · Süreç",
-    "title": "Şeffaf dört adımda belgelendirme.",
+    "title": "Şeffaf dört adımda uygunluk değerlendirmesi.",
     "intro": "Her adım, eksikleri net görmeniz için tasarlandı. Sürpriz fatura, sürpriz kapsam yok."
   },
   "standards": {
     "kicker": "04 · Standart Kütüphanesi",
     "title": "18 yönetim sistemi standardı.",
-    "intro": "Kalite, çevre, gıda, bilgi güvenliği, enerji, su verimliliği, iş güvenliği ve sosyal sorumluluk alanlarında akrediteli belgelendirme."
+    "intro": "Kalite, çevre, gıda, bilgi güvenliği, enerji, su verimliliği, iş güvenliği ve sosyal sorumluluk alanlarında akrediteli uygunluk değerlendirmesi."
   },
   "clients": {
     "kicker": "05 · Kimlerle Çalışıyoruz",
@@ -66,7 +66,7 @@
     }
   },
   "footer": {
-    "tagline": "Belgelendirme, gözetim ve teknik kontrol.",
+    "tagline": "Uygunluk değerlendirme, gözetim ve teknik kontrol.",
     "servicesHeading": "Hizmetler",
     "companyHeading": "Kurumsal",
     "contactHeading": "İletişim",
