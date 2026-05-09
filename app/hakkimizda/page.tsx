@@ -46,9 +46,27 @@ export default function Hakkimizda() {
           <h1 className="mt-6 display-xl text-cream max-w-4xl">
             Güven, <span className="italic text-crimson font-normal">editoryel</span> titizliktir.
           </h1>
-          <p className="mt-8 max-w-2xl text-cream/75 leading-relaxed">
-            Area Control, Antalya merkezli bağımsız bir uygunluk değerlendirme, gözetim ve teknik kontrol şirketidir. Otel ve restoran operasyonlarının kalitesini uluslararası yönetim sistemi standartlarına bağlar; sahada veriye dayalı denetim disiplini uygular.
-          </p>
+          <div className="mt-10 max-w-3xl space-y-6 text-cream/80 leading-relaxed">
+            <p>
+              Area Control Belgelendirme Gözetim ve Teknik Kontrol Hizmetleri A.Ş., Antalya merkezli bağımsız bir uygunluk değerlendirme, gözetim ve saha denetimi şirketidir. Otel, restoran, gıda hizmeti ve tedarik zinciri operasyonlarında kalite, hijyen, sürdürülebilirlik, müşteri memnuniyeti ve yönetim sistemi prensiplerine dayalı değerlendirme hizmetleri sunar.
+            </p>
+            <p>
+              Yaklaşımımız; masa başı evrak kontrolünden öte, sahada doğrulanabilir kanıt, tarafsız uzman bakışı, ölçülebilir raporlama ve sürekli iyileştirme esaslarına dayanır. Denetimlerde yalnızca doküman varlığı değil; uygulamanın gerçek operasyon içindeki karşılığı değerlendirilir.
+            </p>
+            <p>
+              Area Control, işletmelerin uluslararası standartlar, iyi uygulama prensipleri ve sektörel beklentiler doğrultusunda gelişim alanlarını belirlemelerine yardımcı olur. Tedarikçi denetimi, hijyen ve saha kontrolleri, sistem uygunluk değerlendirmeleri ve özel değerlendirme programlarıyla işletmelere bağımsız, izlenebilir ve raporlanabilir bir kontrol altyapısı sağlar. Sunulan uygunluk değerlendirme, gözetim, tedarikçi denetimi ve saha kontrol hizmetleri; işletmelerin operasyonel uygunluk, hijyen, sürdürülebilirlik, müşteri memnuniyeti ve yönetim sistemi prensipleri açısından değerlendirilmesini amaçlar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 border-t border-white/5 bg-ink-soft">
+        <div className="mx-auto max-w-3xl px-6 lg:px-10">
+          <div className="flex items-start gap-4 border-l-2 border-crimson/40 pl-5">
+            <p className="text-cream/60 text-[0.92rem] leading-relaxed italic">
+              Area Control, akredite yönetim sistemi belgelendirme kuruluşu olarak faaliyet gösterdiğini beyan etmez. Sunulan belgeler, ilgili hizmet kapsamına göre özel değerlendirme, saha denetimi, tedarikçi uygunluğu veya program bazlı uygunluk değerlendirme niteliğindedir.
+            </p>
+          </div>
         </div>
       </section>
 

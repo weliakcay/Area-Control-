@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-ink: #16120F;
-  --color-ink-soft: #1E1916;
+  --color-ink: #221C18;
+  --color-ink-soft: #2C2620;
   --color-burgundy: #440709;
   --color-blood: #7A0F14;
   --color-crimson: #A0141A;

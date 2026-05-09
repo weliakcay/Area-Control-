@@ -26,7 +26,7 @@ export const services: Service[] = [
     slug: 'sistem-belgelendirme',
     number: '01',
     title: 'Sistem Uygunluk Değerlendirmesi',
-    tagline: 'İşinizi uluslararası standartlarla tescilleyin.',
+    tagline: 'İşinizi uluslararası standartlarla değerlendirin.',
     teaserBenefit: 'ISO 9001\'den 22000\'e 8 farklı yönetim sistemi standardında uygunluk değerlendirmesi.',
     summary:
       'ISO 9001\'den 22000\'e, uluslararası geçerliliği olan sistem uygunluk değerlendirmesi; süreçlerinizin kalitesini ve yönetim disiplininizi resmi onayla taçlandırıyoruz.',
@@ -48,7 +48,7 @@ export const services: Service[] = [
       'Yasal uyumluluk: güncel regülasyonlara ve sektörel şartlara tam uyum',
     ],
     pullQuote:
-      'Sertifikasyon bir yük değil, daha verimli ve karlı bir işletme olmanın yol haritasıdır. Geleceğinizi bugünden tescilleyin.',
+      'Sertifikasyon bir yük değil, daha verimli ve karlı bir işletme olmanın yol haritasıdır. Geleceğinizi bugünden değerlendirin.',
     relatedStandards: ['9001', '14001', '22000', '45001', '50001', '46001', '10002', '26000'],
   },
   {
