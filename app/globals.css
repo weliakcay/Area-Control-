@@ -1,13 +1,13 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-ink: #221C18;
-  --color-ink-soft: #2C2620;
-  --color-burgundy: #440709;
-  --color-blood: #7A0F14;
-  --color-crimson: #A0141A;
+  --color-ink: #3D3127;
+  --color-ink-soft: #4B3E33;
+  --color-burgundy: #5A0F12;
+  --color-blood: #8E1A20;
+  --color-crimson: #B82228;
   --color-cream: #EBE2D3;
-  --color-gold: #B8956A;
+  --color-gold: #C9A578;
   --font-display: 'Playfair Display', Georgia, serif;
   --font-sans: 'Instrument Sans', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
