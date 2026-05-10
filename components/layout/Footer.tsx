@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div className="col-span-2 md:col-span-1">
           <div className="mb-5">
-            <Image src="/logo.svg" alt={site.name} width={220} height={54} className="h-11 w-auto" />
+            <Image src="/logo.svg" alt={site.name} width={520} height={144} className="h-28 w-auto" />
           </div>
           <p className="text-cream/55 text-[0.82rem] leading-relaxed max-w-xs">
             {tr.footer.tagline}
