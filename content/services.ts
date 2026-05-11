@@ -36,7 +36,7 @@ export const services: Service[] = [
       'Ön analiz: mevcut sisteminizin standart gerekliliklerine uyum düzeyinin tespiti',
       'Stratejik planlama: iş akışınızı aksatmayacak saha denetim takvimi',
       'Saha denetimi: uzman denetçilerle süreçlerin yerinde incelenmesi ve raporlanması',
-      'Tescil ve sertifika teslimi',
+      'Uygunluk değerlendirme raporu ve sonuç belgesinin teslimi',
       'Yıllık gözetim denetimleri ve 3 yıllık yenileme döngüsü',
       'ISO 20400 Rehberliğinde Sürdürülebilir Satın Alma Değerlendirmesi',
       'Adil Ticaret ve Etik Tedarik Değerlendirmesi',
