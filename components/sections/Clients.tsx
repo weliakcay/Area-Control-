@@ -34,7 +34,7 @@ export default function Clients() {
                 <div className="font-display text-cream/80 text-lg text-center leading-tight group-hover:text-crimson transition-colors">
                   {c.name}
                 </div>
-                <div className="mt-2 font-mono text-[0.65rem] tracking-[0.3em] uppercase text-cream/30">
+                <div className="mt-2 font-mono text-[0.78rem] tracking-[0.3em] uppercase text-cream/30">
                   {c.type}
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default function Clients() {
           ))}
         </div>
 
-        <p className="mt-8 text-cream/40 text-[0.75rem] font-mono tracking-[0.2em]">
+        <p className="mt-8 text-cream/40 text-[0.85rem] font-mono tracking-[0.2em]">
           * Referans logoları müşteri onayı sonrası yayınlanacaktır.
         </p>
       </div>

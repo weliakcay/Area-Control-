@@ -35,13 +35,13 @@ export default function ServicesTriple() {
                   <h3 className="mt-8 font-display text-2xl md:text-3xl text-cream leading-tight">
                     {s.title}
                   </h3>
-                  <p className="mt-4 text-cream/70 text-[0.9rem] leading-relaxed">
+                  <p className="mt-4 text-cream/70 text-[1rem] leading-relaxed">
                     {s.tagline}
                   </p>
-                  <p className="mt-3 text-cream/50 text-[0.82rem] leading-relaxed flex-1 border-l-2 border-crimson/40 pl-3">
+                  <p className="mt-3 text-cream/50 text-[0.92rem] leading-relaxed flex-1 border-l-2 border-crimson/40 pl-3">
                     {s.teaserBenefit}
                   </p>
-                  <span className="mt-8 inline-flex items-center gap-3 text-[0.72rem] tracking-[0.3em] uppercase text-crimson font-mono">
+                  <span className="mt-8 inline-flex items-center gap-3 text-[0.82rem] tracking-[0.3em] uppercase text-crimson font-mono">
                     <span className="w-6 h-px bg-crimson group-hover:w-10 transition-all" />
                     Detay
                   </span>

@@ -29,7 +29,7 @@ export default function About() {
                   <div className="font-display text-4xl md:text-5xl text-crimson leading-none">
                     <Counter to={m.value} />
                   </div>
-                  <div className="mt-3 font-mono text-[0.7rem] tracking-[0.25em] uppercase text-cream/50">
+                  <div className="mt-3 font-mono text-[0.82rem] tracking-[0.25em] uppercase text-cream/50">
                     {m.label}
                   </div>
                 </div>

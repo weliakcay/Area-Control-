@@ -92,7 +92,7 @@ export default function ProcessHorizontal() {
                   </div>
                 </div>
                 <div className="lg:col-span-7">
-                  <div className="font-mono text-[0.72rem] tracking-[0.3em] uppercase text-crimson mb-4 flex items-center gap-3">
+                  <div className="font-mono text-[0.82rem] tracking-[0.3em] uppercase text-crimson mb-4 flex items-center gap-3">
                     <span className="w-8 h-px bg-crimson/60" />
                     Adım {i + 1} / {processSteps.length}
                   </div>

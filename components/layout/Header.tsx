@@ -37,20 +37,20 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 text-[0.82rem] tracking-wide text-cream/75">
+        <nav className="hidden md:flex items-center gap-8 text-[0.92rem] tracking-wide text-cream/75">
           <div className="relative group">
             <Link href="/#hizmetler" className="hover:text-cream transition-colors">
               {tr.nav.services}
             </Link>
             <div className="absolute left-0 top-full mt-4 w-72 bg-ink/95 backdrop-blur-md border border-white/5 p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <Link href="/hizmetler/sistem-belgelendirme" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
-                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">01</span>Sistem Uygunluk Değerlendirmesi
+                <span className="font-mono text-[0.78rem] text-crimson/70 mr-2">01</span>Sistem Uygunluk Değerlendirmesi
               </Link>
               <Link href="/hizmetler/tedarikci-denetimi" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
-                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">02</span>Tedarikçi Denetimi
+                <span className="font-mono text-[0.78rem] text-crimson/70 mr-2">02</span>Tedarikçi Denetimi
               </Link>
               <Link href="/hizmetler/hijyen-denetimi" className="block py-2 px-2 text-cream/70 hover:text-crimson hover:bg-white/5 rounded-sm">
-                <span className="font-mono text-[0.65rem] text-crimson/70 mr-2">03</span>Hijyen ve Saha Denetimi
+                <span className="font-mono text-[0.78rem] text-crimson/70 mr-2">03</span>Hijyen ve Saha Denetimi
               </Link>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/iletisim"
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 border border-crimson/60 text-cream text-[0.75rem] tracking-[0.2em] uppercase hover:bg-crimson hover:border-crimson transition-colors"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 border border-crimson/60 text-cream text-[0.85rem] tracking-[0.2em] uppercase hover:bg-crimson hover:border-crimson transition-colors"
           >
             {tr.nav.cta}
             <span aria-hidden>&rarr;</span>
@@ -87,7 +87,7 @@ export default function Header() {
           <Link href="/hizmetler/hijyen-denetimi" onClick={() => setMenuOpen(false)} className="text-cream/80">Hijyen ve Saha Denetimi</Link>
           <Link href="/hakkimizda" onClick={() => setMenuOpen(false)} className="text-cream/80">{tr.nav.about}</Link>
           <Link href="/iletisim" onClick={() => setMenuOpen(false)} className="text-cream/80">{tr.nav.contact}</Link>
-          <Link href="/iletisim" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex justify-center items-center px-4 py-3 bg-crimson text-cream uppercase tracking-[0.2em] text-[0.75rem]">
+          <Link href="/iletisim" onClick={() => setMenuOpen(false)} className="mt-2 inline-flex justify-center items-center px-4 py-3 bg-crimson text-cream uppercase tracking-[0.2em] text-[0.85rem]">
             {tr.nav.cta}
           </Link>
         </div>

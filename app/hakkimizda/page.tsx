@@ -63,7 +63,7 @@ export default function Hakkimizda() {
       <section className="py-12 border-t border-white/5 bg-ink-soft">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <div className="flex items-start gap-4 border-l-2 border-crimson/40 pl-5">
-            <p className="text-cream/60 text-[0.92rem] leading-relaxed italic">
+            <p className="text-cream/60 text-[1.02rem] leading-relaxed italic">
               Area Control, akredite yönetim sistemi belgelendirme kuruluşu olarak faaliyet gösterdiğini beyan etmez. Sunulan belgeler, ilgili hizmet kapsamına göre özel değerlendirme, saha denetimi, tedarikçi uygunluğu veya program bazlı uygunluk değerlendirme niteliğindedir.
             </p>
           </div>
@@ -92,11 +92,11 @@ export default function Hakkimizda() {
             {VALUES.map((v, i) => (
               <Reveal key={v.title} delay={i * 0.08}>
                 <div className="bg-ink p-8 h-full">
-                  <div className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-crimson/80">
+                  <div className="font-mono text-[0.78rem] tracking-[0.3em] uppercase text-crimson/80">
                     0{i + 1}
                   </div>
                   <h3 className="mt-4 font-display text-2xl text-cream">{v.title}</h3>
-                  <p className="mt-3 text-cream/60 text-[0.9rem] leading-relaxed">{v.text}</p>
+                  <p className="mt-3 text-cream/60 text-[1rem] leading-relaxed">{v.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -108,7 +108,7 @@ export default function Hakkimizda() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <Reveal><KickerLabel>Yaklaşımımız</KickerLabel></Reveal>
-            <Reveal as="p" delay={0.05} className="mt-5 text-cream/55 leading-relaxed text-[0.92rem] max-w-xs">
+            <Reveal as="p" delay={0.05} className="mt-5 text-cream/55 leading-relaxed text-[1.02rem] max-w-xs">
               Üç hizmet, tek metodoloji. Saha, tarafsızlık ve ölçülebilirlik üzerine kurulu bir denetim disiplini.
             </Reveal>
           </div>
@@ -116,7 +116,7 @@ export default function Hakkimizda() {
             {APPROACH.map((a, i) => (
               <Reveal key={a.title} delay={i * 0.08}>
                 <div className="bg-ink p-8 grid md:grid-cols-12 gap-6 items-start">
-                  <div className="md:col-span-3 font-mono text-[0.65rem] tracking-[0.3em] uppercase text-crimson/80">
+                  <div className="md:col-span-3 font-mono text-[0.78rem] tracking-[0.3em] uppercase text-crimson/80">
                     0{i + 1} · Prensip
                   </div>
                   <div className="md:col-span-9">

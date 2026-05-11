@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button';
 export default function NotFound() {
   return (
     <section className="min-h-[100svh] flex flex-col items-center justify-center text-center px-6 bg-ink grain isolate">
-      <div className="font-mono text-[0.72rem] tracking-[0.3em] uppercase text-crimson mb-8">
+      <div className="font-mono text-[0.82rem] tracking-[0.3em] uppercase text-crimson mb-8">
         404 &middot; Kayıp bölüm
       </div>
       <h1 className="display-xl text-cream max-w-3xl">

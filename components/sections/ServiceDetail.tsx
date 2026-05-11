@@ -13,7 +13,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
     <>
       <section className="pt-36 pb-16 px-6 lg:px-10 bg-ink grain isolate">
         <div className="mx-auto max-w-7xl">
-          <div className="flex items-center gap-4 text-cream/50 text-[0.75rem] font-mono tracking-[0.25em] uppercase mb-6">
+          <div className="flex items-center gap-4 text-cream/50 text-[0.85rem] font-mono tracking-[0.25em] uppercase mb-6">
             <Link href="/" className="hover:text-cream">Anasayfa</Link>
             <span>/</span>
             <span className="text-crimson">Hizmetler</span>
@@ -62,7 +62,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                   {block.items.map((item, i) => (
                     <Reveal as="li" key={i} delay={i * 0.05}>
                       <div className="flex items-start gap-5 border-b border-white/5 pb-5">
-                        <span className="font-mono text-[0.75rem] text-crimson mt-1 shrink-0">
+                        <span className="font-mono text-[0.85rem] text-crimson mt-1 shrink-0">
                           {String(i + 1).padStart(2, '0')}
                         </span>
                         <span className="text-cream/80 text-lg leading-relaxed">{item}</span>
@@ -84,7 +84,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 {service.scope.map((item, i) => (
                   <Reveal as="li" key={i} delay={i * 0.05}>
                     <div className="flex items-start gap-5 border-b border-white/5 pb-5">
-                      <span className="font-mono text-[0.75rem] text-crimson mt-1 shrink-0">
+                      <span className="font-mono text-[0.85rem] text-crimson mt-1 shrink-0">
                         {String(i + 1).padStart(2, '0')}
                       </span>
                       <span className="text-cream/80 text-lg leading-relaxed">{item}</span>
@@ -140,7 +140,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 <div key={s.code} className="bg-ink p-6">
                   <div className="kicker mb-2">{s.code}</div>
                   <h3 className="font-display text-xl text-cream">{s.name}</h3>
-                  <p className="mt-3 text-cream/60 text-[0.85rem] leading-relaxed">{s.pitch ?? s.description}</p>
+                  <p className="mt-3 text-cream/60 text-[0.95rem] leading-relaxed">{s.pitch ?? s.description}</p>
                 </div>
               ))}
             </div>

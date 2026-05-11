@@ -11,14 +11,14 @@ export default function Footer() {
           <div className="mb-5">
             <Image src="/logo.svg" alt={site.name} width={520} height={144} className="h-28 w-auto" />
           </div>
-          <p className="text-cream/55 text-[0.82rem] leading-relaxed max-w-xs">
+          <p className="text-cream/55 text-[0.92rem] leading-relaxed max-w-xs">
             {tr.footer.tagline}
           </p>
         </div>
 
         <div>
           <h4 className="kicker mb-4">{tr.footer.servicesHeading}</h4>
-          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.85rem]">
+          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.95rem]">
             <li><Link href="/hizmetler/sistem-belgelendirme" className="hover:text-crimson">Sistem Uygunluk Değerlendirmesi</Link></li>
             <li><Link href="/hizmetler/tedarikci-denetimi" className="hover:text-crimson">Tedarikçi Denetimi</Link></li>
             <li><Link href="/hizmetler/hijyen-denetimi" className="hover:text-crimson">Hijyen ve Saha Denetimi</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
 
         <div>
           <h4 className="kicker mb-4">{tr.footer.companyHeading}</h4>
-          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.85rem]">
+          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.95rem]">
             <li><Link href="/hakkimizda" className="hover:text-crimson">Hakkımızda</Link></li>
             <li><Link href="/iletisim" className="hover:text-crimson">İletişim</Link></li>
           </ul>
@@ -35,7 +35,7 @@ export default function Footer() {
 
         <div>
           <h4 className="kicker mb-4">{tr.footer.contactHeading}</h4>
-          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.85rem]">
+          <ul className="flex flex-col gap-2.5 text-cream/70 text-[0.95rem]">
             <li>
               <a href={`tel:${site.phoneE164}`} className="hover:text-crimson">{site.phoneDisplay}</a>
             </li>
@@ -52,10 +52,10 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10 mt-14 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-        <p className="text-cream/40 text-[0.75rem] font-mono">
+        <p className="text-cream/40 text-[0.85rem] font-mono">
           &copy; {new Date().getFullYear()} {site.legalName} &middot; {tr.footer.copyright}
         </p>
-        <div className="flex items-center gap-4 text-cream/40 text-[0.7rem] font-mono">
+        <div className="flex items-center gap-4 text-cream/40 text-[0.82rem] font-mono">
           {site.accreditations.map((a) => (
             <span key={a.code} className="flex items-center gap-1">
               <span className="w-1 h-1 bg-crimson rounded-full" />

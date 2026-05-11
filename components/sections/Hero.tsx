@@ -39,7 +39,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-mono text-[0.72rem] tracking-[0.3em] uppercase text-crimson mb-8 flex items-center gap-4"
+          className="font-mono text-[0.82rem] tracking-[0.3em] uppercase text-crimson mb-8 flex items-center gap-4"
         >
           <span className="w-10 h-px bg-crimson/60" aria-hidden />
           {tr.hero.kicker}

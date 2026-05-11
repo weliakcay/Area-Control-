@@ -76,7 +76,7 @@ export default function Iletisim() {
         <div className="mx-auto max-w-7xl mb-20 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <KickerLabel>Süreç nasıl başlar?</KickerLabel>
-            <p className="mt-5 text-cream/55 leading-relaxed text-[0.92rem] max-w-xs">
+            <p className="mt-5 text-cream/55 leading-relaxed text-[1.02rem] max-w-xs">
               Form sonrası takvim sizin elinizde — kapsamı şeffaf bir görüşmeyle birlikte belirleriz.
             </p>
           </div>
@@ -84,11 +84,11 @@ export default function Iletisim() {
             {NEXT_STEPS.map((step, i) => (
               <Reveal key={step.title} delay={i * 0.08}>
                 <div className="bg-ink p-7 h-full">
-                  <div className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-crimson/80 mb-4">
+                  <div className="font-mono text-[0.78rem] tracking-[0.3em] uppercase text-crimson/80 mb-4">
                     0{i + 1}
                   </div>
                   <h3 className="font-display text-xl text-cream">{step.title}</h3>
-                  <p className="mt-3 text-cream/60 text-[0.88rem] leading-relaxed">{step.text}</p>
+                  <p className="mt-3 text-cream/60 text-[0.98rem] leading-relaxed">{step.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -119,7 +119,7 @@ export default function Iletisim() {
                 href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-crimson text-[0.75rem] tracking-[0.3em] uppercase hover:underline"
+                className="mt-4 inline-flex items-center gap-2 text-crimson text-[0.85rem] tracking-[0.3em] uppercase hover:underline"
               >
                 Haritada aç &rarr;
               </a>

@@ -48,7 +48,7 @@ export default function CtaFooter() {
             <div className="font-display text-2xl text-cream group-hover:text-crimson transition-colors">
               {site.phoneDisplay}
             </div>
-            <div className="mt-2 text-cream/50 text-[0.85rem]">Hemen mesaj at</div>
+            <div className="mt-2 text-cream/50 text-[0.95rem]">Hemen mesaj at</div>
           </a>
 
           <a
@@ -59,7 +59,7 @@ export default function CtaFooter() {
             <div className="font-display text-2xl text-cream group-hover:text-crimson transition-colors">
               {site.phoneDisplay}
             </div>
-            <div className="mt-2 text-cream/50 text-[0.85rem]">Mesai saatlerinde</div>
+            <div className="mt-2 text-cream/50 text-[0.95rem]">Mesai saatlerinde</div>
           </a>
 
           <Link
@@ -68,7 +68,7 @@ export default function CtaFooter() {
           >
             <div className="kicker text-cream/80 mb-4">Form</div>
             <div className="font-display text-2xl text-cream">Teklif Formu</div>
-            <div className="mt-2 text-cream/70 text-[0.85rem]">Kapsamlı bilgi al</div>
+            <div className="mt-2 text-cream/70 text-[0.95rem]">Kapsamlı bilgi al</div>
             <span className="absolute top-8 right-8 text-cream">&rarr;</span>
           </Link>
         </div>

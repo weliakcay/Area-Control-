@@ -44,7 +44,7 @@ export default function ContactForm() {
       </div>
 
       <label className="flex flex-col gap-2">
-        <span className="text-[0.72rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
+        <span className="text-[0.82rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
           {tr.cta.form.service}
         </span>
         <select
@@ -62,7 +62,7 @@ export default function ContactForm() {
       </label>
 
       <label className="flex flex-col gap-2">
-        <span className="text-[0.72rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
+        <span className="text-[0.82rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
           {tr.cta.form.message}
         </span>
         <textarea
@@ -77,16 +77,16 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === 'sending'}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-crimson text-cream text-[0.75rem] uppercase tracking-[0.25em] font-medium hover:bg-blood transition-colors disabled:opacity-60"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-crimson text-cream text-[0.85rem] uppercase tracking-[0.25em] font-medium hover:bg-blood transition-colors disabled:opacity-60"
         >
           {status === 'sending' ? '...' : tr.cta.form.submit}
           <span aria-hidden>&rarr;</span>
         </button>
         {status === 'success' && (
-          <p className="text-green-400 text-[0.85rem]">{tr.cta.form.success}</p>
+          <p className="text-green-400 text-[0.95rem]">{tr.cta.form.success}</p>
         )}
         {status === 'error' && (
-          <p className="text-red-400 text-[0.85rem]">
+          <p className="text-red-400 text-[0.95rem]">
             Gönderim başarısız oldu. Lütfen telefon veya WhatsApp üzerinden ulaşın.
           </p>
         )}
@@ -98,7 +98,7 @@ export default function ContactForm() {
 function Field({ name, label, type = 'text', required = false }: { name: string; label: string; type?: string; required?: boolean }) {
   return (
     <label className="flex flex-col gap-2">
-      <span className="text-[0.72rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
+      <span className="text-[0.82rem] tracking-[0.25em] uppercase text-cream/50 font-mono">
         {label}{required && ' *'}
       </span>
       <input

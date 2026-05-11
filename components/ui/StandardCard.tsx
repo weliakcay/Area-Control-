@@ -19,14 +19,14 @@ export default function StandardCard({ s }: { s: Standard }) {
       className={`relative group w-72 shrink-0 h-56 rounded-sm bg-gradient-to-br ${categoryColor[s.category]} to-ink border border-white/5 p-6 flex flex-col justify-between overflow-hidden hover:border-crimson/40 transition-colors`}
     >
       <div>
-        <div className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-crimson/80 mb-2">
+        <div className="font-mono text-[0.78rem] tracking-[0.3em] uppercase text-crimson/80 mb-2">
           {s.code}
         </div>
         <h3 className="font-display text-xl text-cream leading-tight">
           {s.name}
         </h3>
       </div>
-      <p className="text-cream/55 text-[0.8rem] leading-relaxed line-clamp-3">
+      <p className="text-cream/55 text-[0.9rem] leading-relaxed line-clamp-3">
         {s.description}
       </p>
       <div className="absolute -right-4 -bottom-6 font-display text-[7rem] leading-none text-white/[0.03] select-none">

@@ -14,7 +14,7 @@ type Props = {
 };
 
 const base =
-  'inline-flex items-center gap-2 px-5 py-3 text-[0.75rem] uppercase tracking-[0.25em] font-medium transition-all duration-300';
+  'inline-flex items-center gap-2 px-5 py-3 text-[0.85rem] uppercase tracking-[0.25em] font-medium transition-all duration-300';
 
 const styles: Record<Variant, string> = {
   primary: 'bg-crimson text-cream hover:bg-blood border border-crimson',
