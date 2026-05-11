@@ -32,7 +32,7 @@ export default function VideoQuote() {
           loop
           playsInline
           preload="metadata"
-          poster="/media/hero-poster.jpg"
+          poster="/media/hero-poster.png"
         >
           <source src="/media/hero-video.webm" type="video/webm" />
           <source src="/media/hero-video.mp4" type="video/mp4" />
